@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Tue Aug 28 11:40:32 2018
+# Process ID: 12380
+# Current directory: C:/Users/jbu021/Soc_FPGA/Project1_JBui/Project1_JBui.runs/synth_1
+# Command line: vivado.exe -log stopwatch_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source stopwatch_test.tcl
+# Log file: C:/Users/jbu021/Soc_FPGA/Project1_JBui/Project1_JBui.runs/synth_1/stopwatch_test.vds
+# Journal file: C:/Users/jbu021/Soc_FPGA/Project1_JBui/Project1_JBui.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source stopwatch_test.tcl -notrace
