@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Thu Aug 30 19:33:43 2018
+| Date         : Fri Aug 31 13:15:45 2018
 | Host         : USL09013W running 64-bit major release  (build 9200)
 | Command      : report_drc -file Reaction_Timer_drc_routed.rpt -pb Reaction_Timer_drc_routed.pb -rpx Reaction_Timer_drc_routed.rpx
 | Design       : Reaction_Timer
@@ -49,17 +49,17 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net d3_tmp_reg[0]_i_2_n_0 is a gated clock net sourced by a combinational pin d3_tmp_reg[0]_i_2/O, cell d3_tmp_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net rgb_led2_reg[2]_i_2_n_0 is a gated clock net sourced by a combinational pin rgb_led2_reg[2]_i_2/O, cell rgb_led2_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net rgb_led2_reg[2]_i_2_n_0 is a gated clock net sourced by a combinational pin rgb_led2_reg[2]_i_2/O, cell rgb_led2_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net run_reg_i_2_n_0 is a gated clock net sourced by a combinational pin run_reg_i_2/O, cell run_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net stim_reg_i_2_n_0 is a gated clock net sourced by a combinational pin stim_reg_i_2/O, cell stim_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net stim_reg_i_1_n_0 is a gated clock net sourced by a combinational pin stim_reg_i_1/O, cell stim_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

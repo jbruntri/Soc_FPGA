@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Thu Aug 30 19:33:46 2018
+| Date             : Fri Aug 31 13:15:47 2018
 | Host             : USL09013W running 64-bit major release  (build 9200)
 | Command          : report_power -file Reaction_Timer_power_routed.rpt -pb Reaction_Timer_power_summary_routed.pb -rpx Reaction_Timer_power_routed.rpx
 | Design           : Reaction_Timer
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.106        |
+| Total On-Chip Power (W)  | 0.101        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.008        |
+| Dynamic (W)              | 0.004        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.5         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      161 |       --- |             --- |
+| Slice Logic    |    <0.001 |      205 |       --- |             --- |
+|   CARRY4       |    <0.001 |       12 |     15850 |            0.08 |
 |   LUT as Logic |    <0.001 |       59 |     63400 |            0.09 |
-|   CARRY4       |    <0.001 |       15 |     15850 |            0.09 |
-|   Register     |    <0.001 |       60 |    126800 |            0.05 |
-|   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |      136 |       --- |             --- |
-| I/O            |     0.007 |       24 |       210 |           11.43 |
+|   Register     |    <0.001 |      103 |    126800 |            0.08 |
+|   Others       |     0.000 |        8 |       --- |             --- |
+| Signals        |    <0.001 |      174 |       --- |             --- |
+| I/O            |     0.003 |       24 |       210 |           11.43 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.106 |          |           |                 |
+| Total          |     0.101 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,8 +140,9 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| Reaction_Timer |     0.008 |
+| Reaction_Timer |     0.004 |
 |   display      |    <0.001 |
+|   timer        |    <0.001 |
 +----------------+-----------+
 
 

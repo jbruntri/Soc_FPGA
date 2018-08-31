@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Thu Aug 30 19:32:56 2018
+| Date         : Fri Aug 31 13:15:09 2018
 | Host         : USL09013W running 64-bit major release  (build 9200)
 | Command      : report_drc -file Reaction_Timer_drc_opted.rpt -pb Reaction_Timer_drc_opted.pb -rpx Reaction_Timer_drc_opted.rpx
 | Design       : Reaction_Timer

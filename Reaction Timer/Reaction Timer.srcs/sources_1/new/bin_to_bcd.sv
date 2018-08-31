@@ -26,7 +26,7 @@ module bin_to_bcd(
         input logic start,
         input logic [12:0] bin,
         output logic ready, done_tick,
-        output logic val3, val2, val1, val0
+        output logic [3:0] val3, val2, val1, val0
     );
     
     // fsm state type

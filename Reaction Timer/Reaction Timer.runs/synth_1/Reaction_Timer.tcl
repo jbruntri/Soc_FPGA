@@ -17,10 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/jbu021/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6460-USL09013W/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -33,7 +30,9 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo {c:/Users/jbu021/Soc_FPGA/Reaction Timer/Reaction Timer.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
+  {C:/Users/jbu021/Soc_FPGA/Reaction Timer/Reaction Timer.srcs/sources_1/new/LFSR_fib168pi.sv}
   {C:/Users/jbu021/Soc_FPGA/Reaction Timer/Reaction Timer.srcs/sources_1/imports/new/disp_hex_mux.sv}
+  {C:/Users/jbu021/Soc_FPGA/Reaction Timer/Reaction Timer.srcs/sources_1/new/stopwatch.sv}
   {C:/Users/jbu021/Soc_FPGA/Reaction Timer/Reaction Timer.srcs/sources_1/new/Reaction_Timer.sv}
 }
 # Mark all dcp files as not used in implementation to prevent them from being

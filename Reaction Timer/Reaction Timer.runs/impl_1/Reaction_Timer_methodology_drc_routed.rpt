@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Thu Aug 30 19:33:45 2018
+| Date         : Fri Aug 31 13:15:46 2018
 | Host         : USL09013W running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Reaction_Timer_methodology_drc_routed.rpt -pb Reaction_Timer_methodology_drc_routed.pb -rpx Reaction_Timer_methodology_drc_routed.rpx
 | Design       : Reaction_Timer
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 25
+             Violations found: 41
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | TIMING-18 | Warning  | Missing input or output delay | 19         |
-| TIMING-20 | Warning  | Non-clocked latch             | 6          |
+| TIMING-20 | Warning  | Non-clocked latch             | 22         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -130,32 +130,112 @@ Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch d3_tmp_reg[0] cannot be properly analyzed as its control pin d3_tmp_reg[0]/G is not reached by a timing clock
+The latch d0_tmp_reg[0] cannot be properly analyzed as its control pin d0_tmp_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch d3_tmp_reg[3] cannot be properly analyzed as its control pin d3_tmp_reg[3]/G is not reached by a timing clock
+The latch d0_tmp_reg[1] cannot be properly analyzed as its control pin d0_tmp_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch rgb_led2_reg[0] cannot be properly analyzed as its control pin rgb_led2_reg[0]/G is not reached by a timing clock
+The latch d0_tmp_reg[2] cannot be properly analyzed as its control pin d0_tmp_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch rgb_led2_reg[1] cannot be properly analyzed as its control pin rgb_led2_reg[1]/G is not reached by a timing clock
+The latch d0_tmp_reg[3] cannot be properly analyzed as its control pin d0_tmp_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch rgb_led2_reg[2] cannot be properly analyzed as its control pin rgb_led2_reg[2]/G is not reached by a timing clock
+The latch d1_tmp_reg[0] cannot be properly analyzed as its control pin d1_tmp_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
+The latch d1_tmp_reg[1] cannot be properly analyzed as its control pin d1_tmp_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch d1_tmp_reg[2] cannot be properly analyzed as its control pin d1_tmp_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch d1_tmp_reg[3] cannot be properly analyzed as its control pin d1_tmp_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch d2_tmp_reg[0] cannot be properly analyzed as its control pin d2_tmp_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch d2_tmp_reg[1] cannot be properly analyzed as its control pin d2_tmp_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch d2_tmp_reg[2] cannot be properly analyzed as its control pin d2_tmp_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch d2_tmp_reg[3] cannot be properly analyzed as its control pin d2_tmp_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch d3_tmp_reg[0] cannot be properly analyzed as its control pin d3_tmp_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch d3_tmp_reg[1] cannot be properly analyzed as its control pin d3_tmp_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch d3_tmp_reg[2] cannot be properly analyzed as its control pin d3_tmp_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch d3_tmp_reg[3] cannot be properly analyzed as its control pin d3_tmp_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch rgb_led2_reg[0] cannot be properly analyzed as its control pin rgb_led2_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch rgb_led2_reg[1] cannot be properly analyzed as its control pin rgb_led2_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch rgb_led2_reg[2] cannot be properly analyzed as its control pin rgb_led2_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch run_reg cannot be properly analyzed as its control pin run_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
 The latch stim_reg cannot be properly analyzed as its control pin stim_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch timer_clr_reg cannot be properly analyzed as its control pin timer_clr_reg/G is not reached by a timing clock
 Related violations: <none>
 
 
