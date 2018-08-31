@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Thu Aug 30 19:34:37 2018
+# Process ID: 10184
+# Current directory: C:/Users/jbu021/Soc_FPGA/Reaction Timer/Reaction Timer.runs/impl_1
+# Command line: vivado.exe -log Reaction_Timer.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Reaction_Timer.tcl -notrace
+# Log file: C:/Users/jbu021/Soc_FPGA/Reaction Timer/Reaction Timer.runs/impl_1/Reaction_Timer.vdi
+# Journal file: C:/Users/jbu021/Soc_FPGA/Reaction Timer/Reaction Timer.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Reaction_Timer.tcl -notrace

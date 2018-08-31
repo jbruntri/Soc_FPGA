@@ -75,4 +75,48 @@ module bin_to_bcd(
             n_next = n_reg;
     
             case (state_reg)
+                idle:
+                    begin
+                        ready = 1'b1;
+                        if(start)
+                            begin
+                                state_next = op;
+                                bcd3_next = 0;
+                                bcd2_next = 0;
+                                bcd1_next = 0;
+                                bcd0_next = 0;
+                                n_next = 4'b1101; // index
+                                p2s_next = bin;
+                            end
+                    end
+                op:
+                    begin
+                        p2s_next = p2s_reg << 1;
+                        
+                        bcd0_next = {bcd0_tmp[2:0], p2s_reg[12]};
+                        bcd1_next = {bcd1_tmp[2:0], bcd0_reg[3]};
+                        bcd2_next = {bcd2_tmp[2:0], bcd1_reg[3]};
+                        bcd3_next = {bcd3_tmp[2:0], bcd2_reg[3]};
+                        n_next = n_reg - 1;
+                            if(n_next == 0)
+                                state_next = done;
+                    end
+                done:
+                    begin
+                        done_tick = 1'b1;
+                        state_next = idle;
+                    end
+                default: state_next = idle;
+            endcase
+        end
+    assign bcd0_tmp = (bcd0_reg > 4) ? bcd0_reg+3 : bcd0_reg;
+    assign bcd1_tmp = (bcd1_reg > 4) ? bcd1_reg+3 : bcd1_reg;
+    assign bcd2_tmp = (bcd2_reg > 4) ? bcd2_reg+3 : bcd2_reg;
+    assign bcd3_tmp = (bcd3_reg > 4) ? bcd3_reg+3 : bcd3_reg;
+    
+    assign val0 = bcd0_reg;
+    assign val1 = bcd1_reg;
+    assign val2 = bcd2_reg;
+    assign val3 = bcd3_reg;
+                 
 endmodule
