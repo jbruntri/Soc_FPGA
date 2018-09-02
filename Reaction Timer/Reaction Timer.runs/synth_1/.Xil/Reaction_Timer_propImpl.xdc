@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/jbu021/Soc_FPGA/Reaction Timer/Reaction Timer.srcs/constrs_1/imports/Constraints/Nexys4_DDR_pins.xdc} rfile:{../../../Reaction Timer.srcs/constrs_1/imports/Constraints/Nexys4_DDR_pins.xdc} id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/Users/runne/Desktop/Soc_FPGA/Reaction Timer/Reaction Timer.srcs/constrs_1/imports/Constraints/Nexys4_DDR_pins.xdc} rfile:{../../../Reaction Timer.srcs/constrs_1/imports/Constraints/Nexys4_DDR_pins.xdc} id:1} [current_design]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports clk]
 set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]

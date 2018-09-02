@@ -33,7 +33,7 @@ module stopwatch(
     logic [24:0] ms_reg;
     logic [24:0] ms_next;
     
-    //decade registers (decaseconds, seconds, deciseconds)
+    //decade registers (seconds, deciseconds, centiseconds, miliseconds)
     logic [3:0] d3_reg, d2_reg, d1_reg, d0_reg;
     logic [3:0] d3_next, d2_next, d1_next, d0_next;
     

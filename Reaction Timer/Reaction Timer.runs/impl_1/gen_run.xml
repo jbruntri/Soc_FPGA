@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1535739243">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1535855839">
   <File Type="BITSTR-BMM" Name="Reaction_Timer_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Reaction_Timer_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Reaction_Timer_timing_summary_init.rpt"/>
