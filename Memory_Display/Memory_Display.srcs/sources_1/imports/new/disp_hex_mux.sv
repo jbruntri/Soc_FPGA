@@ -24,7 +24,6 @@ module disp_hex_mux(
         input logic clk, reset,         // Clock and reset Signals
         input logic [3:0] val7, val6, val5, val4, val3, val2, val1, val0,    
         input logic [7:0] dp_in,        // decimal point signals
-        input logic [7:0] led_en,       // enable LED 
         output logic [7:0] an,          // Segment Enable Bits
         output logic [7:0] sseg         // 7 segment display output
     );
@@ -49,49 +48,49 @@ module disp_hex_mux(
         case(q_reg[N-1:N-3])
             3'b000:
                 begin
-                    an = 8'b11111110 | ~led_en;
+                    an = 8'b11111110;
                     val = val0;
                     dp = dp_in[0];
                 end
             3'b001:
                 begin
-                    an = 8'b11111101 | ~led_en;
+                    an = 8'b11111101;
                     val = val1;
                     dp = dp_in[1];
                 end
             3'b010:
                 begin
-                    an = 8'b11111011 | ~led_en;
+                    an = 8'b11111011;
                     val = val2;
                     dp = dp_in[2];
                 end
             3'b011:
                 begin
-                    an = 8'b11110111 | ~led_en;
+                    an = 8'b11110111;
                     val = val3;
                     dp = dp_in[3];
                 end
             3'b100:
                 begin
-                    an = 8'b11101111 | ~led_en;
+                    an = 8'b11101111;
                     val = val4;
                     dp = dp_in[4];
                 end
             3'b101:
                 begin
-                    an = 8'b11011111 | ~led_en;
+                    an = 8'b11011111;
                     val = val5;
                     dp = dp_in[5];
                 end
             3'b110:
                 begin
-                    an = 8'b10111111 | ~led_en;
+                    an = 8'b10111111;
                     val = val6;
                     dp = dp_in[6];
                 end
             default:
                 begin
-                    an = 8'b01111111 | ~led_en;
+                    an = 8'b01111111;
                     val = val7;
                     dp = dp_in[7];
                 end
@@ -111,10 +110,10 @@ module disp_hex_mux(
                     4'h7: sseg[6:0]=7'b1111000; // '7'
                     4'h8: sseg[6:0]=7'b0000000; // '8'
                     4'h9: sseg[6:0]=7'b0010000; // '9'
-                    4'ha: sseg[6:0]=7'b0001001; // 'A' 
-                    4'hb: sseg[6:0]=7'b1001111; // 'B' 
-                    4'hc: sseg[6:0]=7'b0000110; // 'C' 
-                    4'hd: sseg[6:0]=7'b0000110; // 'D' 
+                    4'ha: sseg[6:0]=7'b0001000; // 'A' 
+                    4'hb: sseg[6:0]=7'b0000011; // 'B' 
+                    4'hc: sseg[6:0]=7'b1000110; // 'C' 
+                    4'hd: sseg[6:0]=7'b0100001; // 'D' 
                     4'he: sseg[6:0]=7'b0000110; // 'E' 
                     default: sseg[6:0]=7'b0001110; // Default 'F'
                 endcase

@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sun Sep 23 22:09:25 2018
-| Host         : DESKTOP-RO8D54L running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+| Date         : Mon Sep 24 11:44:02 2018
+| Host         : USL09013W running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Memory_Scroll_control_sets_placed.rpt
 | Design       : Memory_Scroll
 | Device       : xc7a100t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    12 |
-| Unused register locations in slices containing registers |    18 |
+| Number of unique control sets                            |    10 |
+| Unused register locations in slices containing registers |    22 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,8 +35,8 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      2 |            1 |
-|      6 |            1 |
-|      8 |            6 |
+|      4 |            1 |
+|      8 |            4 |
 |    16+ |            4 |
 +--------+--------------+
 
@@ -47,11 +47,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              16 |            4 |
-| No           | No                    | Yes                    |              36 |            5 |
+| No           | No                    | No                     |               6 |            2 |
+| No           | No                    | Yes                    |              42 |            6 |
 | No           | Yes                   | No                     |              50 |            7 |
-| Yes          | No                    | No                     |              32 |            4 |
-| Yes          | No                    | Yes                    |              40 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              64 |           10 |
 | Yes          | Yes                   | No                     |              32 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -63,16 +63,14 @@ Table of Contents
 |       Clock Signal       |      Enable Signal      |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
 +--------------------------+-------------------------+-------------------------+------------------+----------------+
 |  state_reg[0]            |                         |                         |                1 |              2 |
-|  rgb_led1_reg[2]_i_2_n_0 |                         |                         |                2 |              6 |
-|  d3_tmp                  |                         |                         |                1 |              8 |
-|  clk_IBUF_BUFG           | timer/d3_reg[3]_i_1_n_0 | timerRST                |                2 |              8 |
+|  rgb_led1_reg[2]_i_1_n_0 |                         |                         |                1 |              4 |
 |  clk_IBUF_BUFG           | timer/d2_next           | timer/d2_reg[3]_i_1_n_0 |                1 |              8 |
-|  clk_IBUF_BUFG           | timer/d1_next           | timer/d1_reg[3]_i_1_n_0 |                1 |              8 |
-|  clk_IBUF_BUFG           | timer/E[0]              | btnr_IBUF               |                1 |              8 |
-|  clk_IBUF_BUFG           | timer/ms_tick           | timer/d0_next           |                1 |              8 |
-|  clk_IBUF_BUFG           | dsp3                    |                         |                4 |             32 |
-|  clk_IBUF_BUFG           | rgb_led1_reg[2]_i_1_n_0 | btnr_IBUF               |                7 |             32 |
-|  clk_IBUF_BUFG           |                         | btnr_IBUF               |                5 |             36 |
+|  clk_IBUF_BUFG           | timer/d3_next           | timerRST                |                1 |              8 |
+|  clk_IBUF_BUFG           | timer/d1_reg[3]_i_2_n_0 | timer/d1_reg[3]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG           | timer/ms_tick           | timer/d0_reg[3]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG           | dsp7[3]_i_1_n_0         | btnr_IBUF               |                6 |             32 |
+|  clk_IBUF_BUFG           | d3_tmp                  | btnr_IBUF               |                4 |             32 |
+|  clk_IBUF_BUFG           |                         | btnr_IBUF               |                6 |             42 |
 |  clk_IBUF_BUFG           |                         | timer/ms_reg[0]_i_1_n_0 |                7 |             50 |
 +--------------------------+-------------------------+-------------------------+------------------+----------------+
 

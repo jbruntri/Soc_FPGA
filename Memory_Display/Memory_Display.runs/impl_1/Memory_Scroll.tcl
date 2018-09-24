@@ -67,7 +67,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param xicom.use_bs_reader 1
   open_checkpoint Memory_Scroll_routed.dcp
-  set_property webtalk.parent_dir C:/Users/runne/Desktop/Soc_FPGA/Memory_Display/Memory_Display.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/jbu021/Soc_FPGA/Memory_Display/Memory_Display.cache/wt [current_project]
   catch { write_mem_info -force Memory_Scroll.mmi }
   write_bitstream -force Memory_Scroll.bit 
   catch {write_debug_probes -quiet -force Memory_Scroll}
