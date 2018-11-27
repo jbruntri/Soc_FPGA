@@ -1,0 +1,944 @@
+13:58:52 **** Incremental Build of configuration Release for project Bui_final_app ****
+make all 
+make: Nothing to be done for `all'.
+14:10:44 **** Incremental Build of configuration Release for project Bui_final_app ****
+make all 
+make: Nothing to be done for `all'.
+14:11:08 **** Auto Build of project Bui_bsp ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+14:11:26 **** Auto Build of configuration Release for project Bui_final_app ****
+make all 
+make: Nothing to be done for `all'.
+14:12:38 **** Clean-only build of configuration Release for project Bui_final_app ****
+make clean 
+rm -rf  ./src/adsr_core.o ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_sampler_test.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o  ./src/adsr_core.d ./src/chu_init.d ./src/ddfs_core.d ./src/gpio_cores.d ./src/i2c_core.d ./src/main_sampler_test.d ./src/ps2_core.d ./src/spi_core.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d ./src/vga_core.d ./src/xadc_core.d  Bui_final_app.elf.size  Bui_final_app.elf
+' '
+14:12:38 **** Clean-only build of project Bui_bsp ****
+make -k clean 
+make -C microblaze_I/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_I/libsrc/cpu_v2_7/src -s clean 
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s clean 
+make -C microblaze_I/libsrc/standalone_v6_7/src -s clean 
+rm -f microblaze_I/lib/libxil.a
+14:12:40 **** Build of project Bui_bsp ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+14:12:58 **** Build of configuration Release for project Bui_final_app ****
+make all 
+'Building file: ../src/adsr_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/adsr_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/adsr_core.d" -MT"src/adsr_core.o" -o "src/adsr_core.o" "../src/adsr_core.cpp"
+../src/adsr_core.cpp: In member function 'void AdsrCore::write_adsr_reg()':
+../src/adsr_core.cpp:130:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (ams == BYPASS_PATTERN) {
+        ~~~~^~~~~~~~~~~~~~~~~
+'Finished building: ../src/adsr_core.cpp'
+' '
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/ddfs_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/ddfs_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ddfs_core.d" -MT"src/ddfs_core.o" -o "src/ddfs_core.o" "../src/ddfs_core.cpp"
+'Finished building: ../src/ddfs_core.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/main_sampler_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main_sampler_test.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sampler_test.d" -MT"src/main_sampler_test.o" -o "src/main_sampler_test.o" "../src/main_sampler_test.cpp"
+'Finished building: ../src/main_sampler_test.cpp'
+' '
+'Building file: ../src/ps2_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/ps2_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ps2_core.d" -MT"src/ps2_core.o" -o "src/ps2_core.o" "../src/ps2_core.cpp"
+'Finished building: ../src/ps2_core.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/vga_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/vga_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_core.d" -MT"src/vga_core.o" -o "src/vga_core.o" "../src/vga_core.cpp"
+'Finished building: ../src/vga_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: Bui_final_app.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Bui_bsp/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Bui_final_app.elf"  ./src/adsr_core.o ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_sampler_test.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Bui_final_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Bui_final_app.elf  |tee "Bui_final_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38280	    284	   2220	  40784	   9f50	Bui_final_app.elf
+'Finished building: Bui_final_app.elf.size'
+' '
+14:15:08 **** Auto Build of configuration Release for project Bui_final_app ****
+make all 
+'Invoking: MicroBlaze Print Size'
+mb-size Bui_final_app.elf  |tee "Bui_final_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38280	    284	   2220	  40784	   9f50	Bui_final_app.elf
+'Finished building: Bui_final_app.elf.size'
+' '
+14:15:22 **** Auto Build of configuration Release for project Bui_final_app ****
+make all 
+'Building file: ../src/adsr_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/adsr_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/adsr_core.d" -MT"src/adsr_core.o" -o "src/adsr_core.o" "../src/adsr_core.cpp"
+../src/adsr_core.cpp: In member function 'void AdsrCore::write_adsr_reg()':
+../src/adsr_core.cpp:130:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (ams == BYPASS_PATTERN) {
+        ~~~~^~~~~~~~~~~~~~~~~
+'Finished building: ../src/adsr_core.cpp'
+' '
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/ddfs_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/ddfs_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ddfs_core.d" -MT"src/ddfs_core.o" -o "src/ddfs_core.o" "../src/ddfs_core.cpp"
+'Finished building: ../src/ddfs_core.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/main_sampler_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main_sampler_test.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sampler_test.d" -MT"src/main_sampler_test.o" -o "src/main_sampler_test.o" "../src/main_sampler_test.cpp"
+'Finished building: ../src/main_sampler_test.cpp'
+' '
+'Building file: ../src/ps2_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/ps2_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ps2_core.d" -MT"src/ps2_core.o" -o "src/ps2_core.o" "../src/ps2_core.cpp"
+'Finished building: ../src/ps2_core.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/vga_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/vga_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_core.d" -MT"src/vga_core.o" -o "src/vga_core.o" "../src/vga_core.cpp"
+'Finished building: ../src/vga_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: Bui_final_app.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Bui_bsp/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Bui_final_app.elf"  ./src/adsr_core.o ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_sampler_test.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Bui_final_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Bui_final_app.elf  |tee "Bui_final_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38280	    284	   2220	  40784	   9f50	Bui_final_app.elf
+'Finished building: Bui_final_app.elf.size'
+' '
+14:26:30 **** Clean-only build of configuration Release for project Bui_final_app ****
+make clean 
+rm -rf  ./src/adsr_core.o ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_sampler_test.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o  ./src/adsr_core.d ./src/chu_init.d ./src/ddfs_core.d ./src/gpio_cores.d ./src/i2c_core.d ./src/main_sampler_test.d ./src/ps2_core.d ./src/spi_core.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d ./src/vga_core.d ./src/xadc_core.d  Bui_final_app.elf.size  Bui_final_app.elf
+' '
+14:26:31 **** Clean-only build of project Bui_bsp ****
+make -k clean 
+make -C microblaze_I/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_I/libsrc/cpu_v2_7/src -s clean 
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s clean 
+make -C microblaze_I/libsrc/standalone_v6_7/src -s clean 
+rm -f microblaze_I/lib/libxil.a
+14:26:32 **** Build of project Bui_bsp ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+14:26:47 **** Build of configuration Release for project Bui_final_app ****
+make all 
+'Building file: ../src/adsr_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/adsr_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/adsr_core.d" -MT"src/adsr_core.o" -o "src/adsr_core.o" "../src/adsr_core.cpp"
+../src/adsr_core.cpp: In member function 'void AdsrCore::write_adsr_reg()':
+../src/adsr_core.cpp:130:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (ams == BYPASS_PATTERN) {
+        ~~~~^~~~~~~~~~~~~~~~~
+'Finished building: ../src/adsr_core.cpp'
+' '
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/ddfs_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/ddfs_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ddfs_core.d" -MT"src/ddfs_core.o" -o "src/ddfs_core.o" "../src/ddfs_core.cpp"
+'Finished building: ../src/ddfs_core.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+'Finished building: ../src/i2c_core.cpp'
+' '
+'Building file: ../src/main_sampler_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/main_sampler_test.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sampler_test.d" -MT"src/main_sampler_test.o" -o "src/main_sampler_test.o" "../src/main_sampler_test.cpp"
+'Finished building: ../src/main_sampler_test.cpp'
+' '
+'Building file: ../src/ps2_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/ps2_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ps2_core.d" -MT"src/ps2_core.o" -o "src/ps2_core.o" "../src/ps2_core.cpp"
+'Finished building: ../src/ps2_core.cpp'
+' '
+'Building file: ../src/spi_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/spi_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/spi_core.d" -MT"src/spi_core.o" -o "src/spi_core.o" "../src/spi_core.cpp"
+'Finished building: ../src/spi_core.cpp'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building file: ../src/vga_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/vga_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_core.d" -MT"src/vga_core.o" -o "src/vga_core.o" "../src/vga_core.cpp"
+'Finished building: ../src/vga_core.cpp'
+' '
+'Building file: ../src/xadc_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/xadc_core.o" -I../../Bui_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc_core.d" -MT"src/xadc_core.o" -o "src/xadc_core.o" "../src/xadc_core.cpp"
+'Finished building: ../src/xadc_core.cpp'
+' '
+'Building target: Bui_final_app.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Bui_bsp/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Bui_final_app.elf"  ./src/adsr_core.o ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_sampler_test.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Bui_final_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Bui_final_app.elf  |tee "Bui_final_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38280	    284	   2220	  40784	   9f50	Bui_final_app.elf
+'Finished building: Bui_final_app.elf.size'
+' '
+14:27:54 **** Auto Build of configuration Release for project Bui_final_app ****
+make all 
+make: Nothing to be done for `all'.
+14:29:38 **** Build of project bui_bsp ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+19:06:48 **** Build of project final_bsp ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+19:08:13 **** Build of configuration Debug for project final_cpp ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../final_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: final_cpp.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../final_bsp/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "final_cpp.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: final_cpp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size final_cpp.elf  |tee "final_cpp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   3108	   5328	   14d0	final_cpp.elf
+'Finished building: final_cpp.elf.size'
+' '
+19:08:18 **** Auto Build of configuration Debug for project final_cpp ****
+make all 
+make: Nothing to be done for `all'.
+19:08:42 **** Incremental Build of configuration Debug for project final_cpp ****
+make all 
+make: Nothing to be done for `all'.
+19:13:01 **** Clean-only build of configuration Debug for project final_cpp ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o  final_cpp.elf.size  final_cpp.elf
+' '
+19:13:01 **** Auto Build of configuration Debug for project final_cpp ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../final_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: final_cpp.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../final_bsp/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "final_cpp.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: final_cpp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size final_cpp.elf  |tee "final_cpp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   2084	   4304	   10d0	final_cpp.elf
+'Finished building: final_cpp.elf.size'
+' '
+19:13:49 **** Incremental Build of configuration Debug for project final_cpp ****
+make all 
+make: Nothing to be done for `all'.
+19:13:55 **** Auto Build of configuration Debug for project final_cpp ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../final_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: final_cpp.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../final_bsp/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "final_cpp.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: final_cpp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size final_cpp.elf  |tee "final_cpp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   2084	   4304	   10d0	final_cpp.elf
+'Finished building: final_cpp.elf.size'
+' '
+19:16:02 **** Incremental Build of configuration Debug for project final_cpp ****
+make all 
+make: Nothing to be done for `all'.
+19:27:33 **** Auto Build of project final_bsp ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+19:27:50 **** Auto Build of configuration Debug for project final_cpp ****
+make all 
+make: Nothing to be done for `all'.
+19:31:08 **** Clean-only build of configuration Debug for project final_cpp ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o  final_cpp.elf.size  final_cpp.elf
+' '
+19:31:09 **** Auto Build of configuration Debug for project final_cpp ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../final_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: final_cpp.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../final_bsp/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "final_cpp.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: final_cpp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size final_cpp.elf  |tee "final_cpp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   2084	   4304	   10d0	final_cpp.elf
+'Finished building: final_cpp.elf.size'
+' '
+19:31:11 **** Auto Build of configuration Debug for project final_cpp ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Sep 24 19:13:44 2018
+# Process ID: 2748
+# Current directory: C:/Users/runne/Desktop/Soc_FPGA/Memory_Display
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2884 C:\Users\runne\Desktop\Soc_FPGA\Memory_Display\Memory_Display.xpr
+# Log file: C:/Users/runne/Desktop/Soc_FPGA/Memory_Display/vivado.log
+# Journal file: C:/Users/runne/Desktop/Soc_FPGA/Memory_Display\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/runne/Desktop/Soc_FPGA/Memory_Display/Memory_Display.xpr
+update_compile_order -fileset sources_1

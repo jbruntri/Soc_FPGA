@@ -1,0 +1,115 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Sat Nov 24 21:40:50 2018
+| Host         : DESKTOP-RO8D54L running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file mcs_top_vanilla_control_sets_placed.rpt
+| Design       : mcs_top_vanilla
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    45 |
+| Unused register locations in slices containing registers |    92 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            4 |
+|      4 |            4 |
+|      6 |            1 |
+|      8 |            4 |
+|     10 |            1 |
+|     12 |            5 |
+|    16+ |           26 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             130 |           25 |
+| No           | No                    | Yes                    |              86 |           16 |
+| No           | Yes                   | No                     |             132 |           35 |
+| Yes          | No                    | No                     |              64 |           20 |
+| Yes          | No                    | Yes                    |             262 |           43 |
+| Yes          | Yes                   | No                     |             338 |           59 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                                                     Enable Signal                                                    |                                                 Set/Reset Signal                                                | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/MTSMSR_Write                                        | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                        |                1 |              2 |
+|  clk_IBUF_BUFG |                                                                                                                      | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.New_Carry_MUXCY/Using_FPGA.Native_0 |                1 |              2 |
+|  clk_IBUF_BUFG |                                                                                                                      | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/MSR_Rst                                        |                1 |              2 |
+|  clk_IBUF_BUFG | mmio_unit/gpo_slot2/wr_en                                                                                            | mmio_unit/timer_slot0/count_reg_reg[0]_0[0]                                                                     |                1 |              2 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/uart_tx_unit/E[0]                                                                     | mmio_unit/timer_slot0/count_reg_reg[0]_0[0]                                                                     |                1 |              4 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/r_ptr_logic[7]_i_1_n_0                                            | mmio_unit/timer_slot0/count_reg_reg[0]_0[0]                                                                     |                1 |              4 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/uart_tx_unit/r_ptr_logic_reg[7][0]                                                    | mmio_unit/timer_slot0/count_reg_reg[0]_0[0]                                                                     |                1 |              4 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/w_ptr_logic[7]_i_1_n_0                                            | mmio_unit/timer_slot0/count_reg_reg[0]_0[0]                                                                     |                1 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                      | cpu_unit/U0/rst_0/U0/peripheral_reset[0]                                                                        |                2 |              6 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/uart_tx_unit/s_next                                                                   | mmio_unit/timer_slot0/count_reg_reg[0]_0[0]                                                                     |                2 |              8 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/uart_rx_unit/s_next                                                                   | mmio_unit/timer_slot0/count_reg_reg[0]_0[0]                                                                     |                3 |              8 |
+|  clk_IBUF_BUFG |                                                                                                                      | cpu_unit/U0/rst_0/U0/bus_struct_reset[0]                                                                        |                2 |              8 |
+|  clk_IBUF_BUFG |                                                                                                                      | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/R                 |                2 |              8 |
+|  clk_IBUF_BUFG |                                                                                                                      | cpu_unit/U0/rst_0/U0/EXT_LPF/lpf_int                                                                            |                1 |             10 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/uart_tx_unit/E[0]                                                                     | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/AR[0]                                                        |                2 |             12 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/w_ptr_logic[7]_i_1_n_0                                            | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/AR[0]                                                        |                2 |             12 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/r_ptr_logic[7]_i_1_n_0                                            | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/AR[0]                                                        |                3 |             12 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/uart_tx_unit/r_ptr_logic_reg[7][0]                                                    | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/AR[0]                                                        |                2 |             12 |
+|  clk_IBUF_BUFG | cpu_unit/U0/rst_0/U0/SEQ/seq_cnt_en                                                                                  | cpu_unit/U0/rst_0/U0/SEQ/SEQ_COUNTER/clear                                                                      |                1 |             12 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/uart_rx_unit/b_next                                                                   | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/AR[0]                                                        |                2 |             16 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/uart_tx_unit/b_next_0                                                                 | mmio_unit/timer_slot0/count_reg_reg[0]_0[0]                                                                     |                3 |             16 |
+|  clk_IBUF_BUFG | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0   | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/S65_out           |                2 |             16 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/dvsr_reg[10]_i_1_n_0                                                                            | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/AR[0]                                                        |                4 |             22 |
+|  clk_IBUF_BUFG |                                                                                                                      | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/AR[0]                                                        |                4 |             24 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1//array_reg_reg_64_127_0_2_i_1_n_0                                                               |                                                                                                                 |                3 |             24 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1//array_reg_reg_0_63_0_2_i_1_n_0                                                                 |                                                                                                                 |                3 |             24 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1//array_reg_reg_192_255_0_2_i_1_n_0                                                              |                                                                                                                 |                3 |             24 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/fifo_tx_unit/c_unit/b_reg_reg[7]_0                                                    |                                                                                                                 |                3 |             24 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/fifo_tx_unit/c_unit/b_reg_reg[7]_2                                                    |                                                                                                                 |                3 |             24 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/fifo_tx_unit/c_unit/b_reg_reg[7]                                                      |                                                                                                                 |                3 |             24 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1/uart_unit/fifo_tx_unit/c_unit/b_reg_reg[7]_1                                                    |                                                                                                                 |                3 |             24 |
+|  clk_IBUF_BUFG | mmio_unit/uart_slot1//array_reg_reg_128_191_0_2_i_1_n_0                                                              |                                                                                                                 |                3 |             24 |
+|  clk_IBUF_BUFG | mmio_unit/gpo_slot2/wr_en                                                                                            | mmio_unit/uart_slot1/uart_unit/fifo_rx_unit/c_unit/AR[0]                                                        |                5 |             30 |
+|  clk_IBUF_BUFG | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/PC_Write               | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                        |                5 |             30 |
+|  clk_IBUF_BUFG |                                                                                                                      | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                        |                8 |             32 |
+|  clk_IBUF_BUFG | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/PreFetch_Buffer_I/PreFetch_Buffers[5].SRL16E_I/E[0] | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                        |                4 |             32 |
+|  clk_IBUF_BUFG |                                                                                                                      | mmio_unit/timer_slot0/count_reg_reg[0]_0[0]                                                                     |               12 |             62 |
+|  clk_IBUF_BUFG |                                                                                                                      | cpu_unit/U0/iomodule_0/U0/Using_IO_Bus.io_bus_read_data[31]_i_1_n_0                                             |               18 |             64 |
+|  clk_IBUF_BUFG | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0   |                                                                                                                 |               20 |             64 |
+|  clk_IBUF_BUFG | cpu_unit/U0/iomodule_0/U0/p_22_out                                                                                   | cpu_unit/U0/rst_0/U0/peripheral_reset[0]                                                                        |               16 |             66 |
+|  clk_IBUF_BUFG | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.clean_iReady_MuxCY/IReady                |                                                                                                                 |               14 |             94 |
+|  clk_IBUF_BUFG | mmio_unit/timer_slot0/count_reg[47]_i_1_n_0                                                                          | mmio_unit/timer_slot0/count_reg_reg[0]_0[0]                                                                     |               10 |             96 |
+|  clk_IBUF_BUFG |                                                                                                                      |                                                                                                                 |               28 |            136 |
+|  clk_IBUF_BUFG | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0   | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                        |               30 |            180 |
+|  clk_IBUF_BUFG | cpu_unit/U0/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Reg_Write                                           |                                                                                                                 |               32 |            256 |
++----------------+----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

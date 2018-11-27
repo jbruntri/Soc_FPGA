@@ -1,0 +1,1847 @@
+!SESSION 2018-11-26 19:26:06.746 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\Users\runne\Desktop\Soc_FPGA\Bui_Final_Project\.metadata\.bak_0.log
+Created Time: 2018-11-26 19:26:58.646
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.647
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.665
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf], Result: [null, {"microblaze_I": {"freertos10_xilinx_v1_1": {"name": "freertos10_xilinx",
+"version": "1.1",
+"desc": "FreeRTOS is a market leading open source RTOS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_1",
+},
+"standalone_v6_7": {"name": "standalone",
+"version": "6.7",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/lib/bsp/standalone_v6_7",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.675
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.683
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.685
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.712
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.714
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf microblaze_I], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.719
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf microblaze_I], Result: [null, dlmb_cntlr ilmb_cntlr iomodule_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.721
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.732
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {"dlmb_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"ilmb_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"iomodule_0": {"name": "iomodule",
+"ver": "2.5",
+},
+"microblaze_I": {"name": "cpu",
+"ver": "2.7",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.735
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.791
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf], Result: [null, {"dlmb": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"dlmb_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_2": {"name": "bram",
+"version": "4.2",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ilmb": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ilmb_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_2": {"name": "bram",
+"version": "4.2",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"iomodule_0": {"version": "3.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"iomodule_v2_5": {"name": "iomodule",
+"version": "2.5",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/iomodule_v2_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"lmb_bram_I": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_I": {"version": "10.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_v2_7": {"name": "cpu",
+"version": "2.7",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"rst_0": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.797
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:26:58.803
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.667
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.673
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.674
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.679
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.686
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.691
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {"dlmb_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"ilmb_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"iomodule_0": {"name": "iomodule",
+"ver": "2.5",
+},
+"microblaze_I": {"name": "cpu",
+"ver": "2.7",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.698
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.702
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.703
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.707
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.711
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.720
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.723
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:23.731
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:31.722
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:31.727
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:31.729
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:31.732
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:31.805
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:32.997
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.082
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.092
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.094
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.102
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.104
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.111
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.113
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.123
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.125
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.132
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {"dlmb_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"ilmb_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"iomodule_0": {"name": "iomodule",
+"ver": "2.5",
+},
+"microblaze_I": {"name": "cpu",
+"ver": "2.7",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.134
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.143
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.176
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.186
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.187
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.200
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.207
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.211
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.255
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:27:33.257
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:33.483
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:287)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:250)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:33.597
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:33.604
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:33.848
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:33.857
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:34.298
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:34.314
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:34.795
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:34.811
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:35.967
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:35.982
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:36.123
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:37.515
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:37.747
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:37.761
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:37.987
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.452
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.466
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.620
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.806
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.818
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.819
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.822
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.824
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.826
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.827
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.828
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.830
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.831
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.832
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.835
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.837
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.838
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.844
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.845
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.845
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.847
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.849
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.850
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.850
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.861
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.862
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.863
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.864
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.867
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.867
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.869
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.871
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.871
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.875
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.876
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.878
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.879
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.880
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.884
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.884
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.884
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.884
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.890
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.891
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.892
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.893
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.895
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.896
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.898
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.900
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.901
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.901
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.906
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.907
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.908
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.909
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.912
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.912
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.915
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.918
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.918
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:38.921
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:39.904
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:39.907
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:39.908
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:39.910
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:39.912
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:39.913
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:39.913
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:41.023
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:41.032
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:41.273
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:42.600
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:42.602
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:42.602
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:50.153
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 19:27:50.178
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:28:59.558
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:28:59.561
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf ], Result: [null, {"microblaze_I": "cpu_unit/microblaze_I:cpu_unit/microblaze_I",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:02.939
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf microblaze_I C_ENDIANNESS], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:02.943
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf microblaze_I C_ENDIANNESS], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:02.964
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:02.968
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:02.972
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf microblaze_I C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:02.976
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf microblaze_I C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:06.620
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:07.885
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:07.888
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:08.937
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B69FA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:08.938
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:08.946
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B69FA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:08.947
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:08.966
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:08.969
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:09.716
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:09.717
+!MESSAGE XSCT Command: [fpga -file C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:29:09.723
+!MESSAGE XSCT command with result: [fpga -file C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/download.bit], Result: [{Format=couldn't open "C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/download.bit": no such file or directory, Time=1543282149722, Code=1}, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:10.754
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:10.765
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:10.768
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:10.779
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:10.951
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:10.994
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {"microblaze_I": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-mlittle-endian -mxl-soft-mul -mno-xl-reorder -mcpu=v10.0",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"default": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "iomodule_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "iomodule_0",
+},
+"stdout": {"category": "",
+"value": "iomodule_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "iomodule_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:11.142
+!MESSAGE XSCT Command: [hsi::utils::get_all_libs -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:11.163
+!MESSAGE XSCT command with result: [hsi::utils::get_all_libs -json], Result: [null, {"libmetal_v1_4": {"name": "libmetal",
+"version": "1.4",
+"desc": "Libmetal Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/ThirdParty/sw_services/libmetal_v1_4",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexr5 psu_cortexa53 microblaze",
+},
+"lwip202_v1_1": {"name": "lwip202",
+"version": "1.1",
+"desc": "lwip202 library: lwIP (light weight IP) is an open source TCP/IP stack configured for Xilinx hard and soft Ethernet MACs",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/ThirdParty/sw_services/lwip202_v1_1",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"openamp_v1_5": {"name": "openamp",
+"version": "1.5",
+"desc": "OpenAmp Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/ThirdParty/sw_services/openamp_v1_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexr5",
+},
+"xilffs_v3_9": {"name": "xilffs",
+"version": "3.9",
+"desc": "Generic Fat File System Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/lib/sw_services/xilffs_v3_9",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"xilflash_v4_4": {"name": "xilflash",
+"version": "4.4",
+"desc": "Xilinx Flash library for Intel/AMD CFI compliant parallel flash",
+"compilerflags": "",
+"linkerflags": "-lxilflash",
+"repo": "D:/SDK/2018.2/data/embeddedsw/lib/sw_services/xilflash_v4_4",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"xilfpga_v4_1": {"name": "xilfpga",
+"version": "4.1",
+"desc": "XilFPGA library provides an interface to the Linux or bare-metal users for configuring the PL over PCAP from PS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilfpga,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/lib/sw_services/xilfpga_v4_1",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa53 psu_cortexr5 psu_pmu",
+},
+"xilisf_v5_11": {"name": "xilisf",
+"version": "5.11",
+"desc": "Xilinx In-system and Serial Flash Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilisf,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/lib/sw_services/xilisf_v5_11",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"xilmfs_v2_3": {"name": "xilmfs",
+"version": "2.3",
+"desc": "Xilinx Memory File System",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "D:/SDK/2018.2/data/embeddedsw/lib/sw_services/xilmfs_v2_3",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"xilpm_v2_3": {"name": "xilpm",
+"version": "2.3",
+"desc": "Power Management API Library for ZynqMP",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/lib/sw_services/xilpm_v2_3",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"xilrsa_v1_5": {"name": "xilrsa",
+"version": "1.5",
+"desc": "Xilinx RSA Library to access RSA and SHA software algorithms on Zynq",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/lib/sw_services/xilrsa_v1_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9",
+},
+"xilsecure_v3_1": {"name": "xilsecure",
+"version": "3.1",
+"desc": "Xilinx Secure Library provides interface to AES, RSA and SHA hardware engines on ZynqMP Soc",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/lib/sw_services/xilsecure_v3_1",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa53 psu_cortexr5 psu_pmu",
+},
+"xilskey_v6_5": {"name": "xilskey",
+"version": "6.5",
+"desc": "Xilinx Secure Key Library supports programming efuse and bbram",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilskey,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/SDK/2018.2/data/embeddedsw/lib/sw_services/xilskey_v6_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:11.167
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:11.176
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:11.179
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:11.196
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:11.299
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:11.310
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, {"dlmb_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"ilmb_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"iomodule_0": {"name": "iomodule",
+"ver": "2.5",
+},
+"microblaze_I": {"name": "cpu",
+"ver": "2.7",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:17.483
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:30:17.487
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/final_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:02.973
+!MESSAGE XSCT Command: [enable_info_messages], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:02.977
+!MESSAGE XSCT command with result: [enable_info_messages], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:05.643
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:05.649
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:05.650
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:05.671
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B69FA]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:05.673
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:05.690
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B69FA]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:05.692
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:05.747
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:13.172
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:13.178
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:13.181
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:13.205
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B69FA]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:13.208
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:13.243
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B69FA]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:13.245
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==1}], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:32:13.296
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:03.696
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:03.705
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/system.hdf ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.251
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.253
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.254
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.262
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B69FA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.262
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.271
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B69FA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.272
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.297
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.298
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.325
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B69FA" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.326
+!MESSAGE XSCT Command: [fpga -file C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-11-26 19:33:09.337
+!MESSAGE XSCT command with result: [fpga -file C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/download.bit], Result: [{Format=couldn't open "C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Final/download.bit": no such file or directory, Time=1543282389334, Code=1}, ]. Thread: ModalContext
