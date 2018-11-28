@@ -4,13 +4,19 @@
 	<item value="bootloop" key="Bui_Final_-microblaze_I-initElf"/>
 	<item value="C:\Users\runne\Desktop\Soc_FPGA\Bui_Final_Project\Bui_Final\Bui_Final.runs\impl_1\mcs_top_vanilla.bit" key="Bui_Final_-bitFile"/>
 	<item value="C:\Users\runne\Desktop\Soc_FPGA\Bui_Final_Project\Bui_Final\Bui_Final.runs\impl_1\mcs_top_vanilla.mmi" key="Final-bmmFile"/>
+	<item value="C:\Users\runne\Desktop\Soc_FPGA\nexys4_sv_vanilla\nexys4_sv_vanilla.srcs\sources_1\imports\code_listing_sv\build\elf\vanilla_test.elf" key="test-microblaze_I-initElf"/>
 	<item value="false" key="Bui_Final_-partial_bit"/>
 	<item value="Auto Detect" key="Bui_Final_-device"/>
+	<item value="C:\Users\runne\Desktop\Soc_FPGA\nexys4_sv_vanilla\nexys4_sv_vanilla.runs\impl_1\mcs_top_vanilla.bit" key="test-bitFile"/>
 	<item value="C:\Users\runne\Desktop\Soc_FPGA\Bui_Final_Project\final_cpp\Debug\final_cpp.elf" key="Final-microblaze_I-initElf"/>
+	<item value="false" key="test-partial_bit"/>
+	<item value="C:\Users\runne\Desktop\Soc_FPGA\nexys4_sv_vanilla\nexys4_sv_vanilla.runs\impl_1\mcs_top_vanilla.mmi" key="test-bmmFile"/>
 	<item value="Digilent Nexys4DDR 210292A8B69FA/1-xc7a100t" key="Final-device"/>
-	<item value="Final" key="programfpga.hwplatform"/>
+	<item value="Auto Detect" key="test-device"/>
+	<item value="test" key="programfpga.hwplatform"/>
 	<item value="false" key="Final-partial_bit"/>
 	<item value="Local" key="Final-target"/>
 	<item value="C:\Users\runne\Desktop\Soc_FPGA\Bui_Final_Project\Bui_Final\Bui_Final.runs\impl_1\mcs_top_vanilla.mmi" key="Bui_Final_-bmmFile"/>
+	<item value="Local" key="test-target"/>
 	<item value="Local" key="Bui_Final_-target"/>
 </section>

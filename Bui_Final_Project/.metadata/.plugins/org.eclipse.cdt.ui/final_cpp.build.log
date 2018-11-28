@@ -1,6 +1,21 @@
-19:31:11 **** Auto Build of configuration Debug for project final_cpp ****
+13:33:17 **** Auto Build of configuration Debug for project final_cpp ****
 make all 
-make: Nothing to be done for `all'.
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../final_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: final_cpp.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../final_bsp/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "final_cpp.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: final_cpp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size final_cpp.elf  |tee "final_cpp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1792	    260	   2084	   4136	   1028	final_cpp.elf
+'Finished building: final_cpp.elf.size'
+' '
 
-19:31:11 Build Finished (took 243ms)
+13:33:18 Build Finished (took 1s.808ms)
 

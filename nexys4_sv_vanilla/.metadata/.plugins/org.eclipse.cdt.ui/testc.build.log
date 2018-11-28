@@ -1,0 +1,14 @@
+14:44:18 **** Auto Build of configuration Debug for project testc ****
+make all 
+'Building file: ../src/i2c_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_core.o" -I../../vanilla_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_core.d" -MT"src/i2c_core.o" -o "src/i2c_core.o" "../src/i2c_core.cpp"
+In file included from ../src/i2c_core.cpp:10:0:
+../src/i2c_core.h:18:10: fatal error: chu_init.h: No such file or directory
+ #include "chu_init.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/i2c_core.o] Error 1
+
+14:44:19 Build Finished (took 498ms)
+
