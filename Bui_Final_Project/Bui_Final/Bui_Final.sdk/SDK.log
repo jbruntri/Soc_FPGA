@@ -1,6 +1,0 @@
-22:59:55 INFO  : Registering command handlers for SDK TCF services
-22:59:56 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\runne\Desktop\Soc_FPGA\Bui_Final_Project\Bui_Final\Bui_Final.sdk\temp_xsdb_launch_script.tcl
-22:59:59 INFO  : XSCT server has started successfully.
-23:00:12 INFO  : Successfully done setting XSCT server connection channel  
-23:00:12 INFO  : Successfully done setting SDK workspace  
-23:00:12 INFO  : Processing command line option -hwspec C:/Users/runne/Desktop/Soc_FPGA/Bui_Final_Project/Bui_Final/Bui_Final.sdk/mcs_top_vanilla.hdf.
