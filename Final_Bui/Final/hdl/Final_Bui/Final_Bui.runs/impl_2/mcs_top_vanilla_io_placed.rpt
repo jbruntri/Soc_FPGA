@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
-| Tool Version              : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date                      : Fri Dec  7 10:57:07 2018
-| Host                      : USL09013W running 64-bit major release  (build 9200)
+| Tool Version              : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date                      : Fri Dec  7 17:29:45 2018
+| Host                      : DESKTOP-RO8D54L running 64-bit major release  (build 9200)
 | Command                   : report_io -file mcs_top_vanilla_io_placed.rpt
 | Design                    : mcs_top_vanilla
 | Device                    : xc7a100t

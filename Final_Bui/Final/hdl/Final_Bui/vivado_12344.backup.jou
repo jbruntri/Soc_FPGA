@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Fri Dec  7 13:20:32 2018
+# Process ID: 12344
+# Current directory: C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13620 C:\Users\runne\Desktop\Soc_FPGA\Final_Bui\Final\hdl\Final_Bui\Final_Bui.xpr
+# Log file: C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui/vivado.log
+# Journal file: C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui/Final_Bui.xpr
+update_compile_order -fileset sources_1

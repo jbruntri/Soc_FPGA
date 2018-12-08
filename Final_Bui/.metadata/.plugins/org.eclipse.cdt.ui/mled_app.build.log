@@ -1,0 +1,26 @@
+18:56:18 **** Auto Build of configuration Debug for project mled_app ****
+make all 
+'Building file: ../src/bui_3led.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bui_3led.o" -IC:/Users/jbu021/Desktop/Final/bsp/mled_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bui_3led.d" -MT"src/bui_3led.o" -o "src/bui_3led.o" "../src/bui_3led.cpp"
+'Finished building: ../src/bui_3led.cpp'
+' '
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -IC:/Users/jbu021/Desktop/Final/bsp/mled_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building target: mled_app.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -LC:/Users/jbu021/Desktop/Final/bsp/mled_bsp/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mled_app.elf"  ./src/bui_3led.o ./src/chu_init.o ./src/gpio_cores.o ./src/main_vanilla_test.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: mled_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mled_app.elf  |tee "mled_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11388	    276	   3152	  14816	   39e0	mled_app.elf
+'Finished building: mled_app.elf.size'
+' '
+
+18:56:19 Build Finished (took 1s.453ms)
+

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Fri Dec  7 13:20:32 2018
+# Process ID: 12344
+# Current directory: C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13620 C:\Users\runne\Desktop\Soc_FPGA\Final_Bui\Final\hdl\Final_Bui\Final_Bui.xpr
+# Log file: C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui/vivado.log
+# Journal file: C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui/Final_Bui.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/jbu021/Soc_FPGA/Final_Bui' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 771.352 ; gain = 103.590
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  7 13:50:13 2018...

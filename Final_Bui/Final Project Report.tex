@@ -5,7 +5,12 @@
 \usepackage{xcolor}
 \usepackage[utf8]{inputenc}
 \lstset{language = Verilog}
-\graphicspath{ {./images/} }
+\lstset{language = C++}
+\graphicspath{ {./img/} }
+
+
+\usepackage[a4paper, margin=1.25in]{geometry}
+
 
 \author{Justin Bui}
 \title{Microblaze Implementation of a Multicolored LED Control System}
@@ -19,164 +24,201 @@
 \newpage
 
 \section{Introduction}
-This document outlines the design and implementation for my final project for ELC 5396. This project makes use of the Digilent NEXYS 4 Artix-7 FPGA development board to implement a Microblaze based multicolored LED control system. The document below includes the functional discription, code portions, and thought process behind the systems design and implementation, as well as some additional features that were not developed due to time constraints. 
+This document outlines the design and implementation for my final project for ELC 5396. This project makes use of the Digilent NEXYS 4 Artix-7 FPGA development board to implement a Microblaze based multicolored LED control system. The document below includes the functional discription, code portions, and thought process behind the systems design and implementation, as well as some additional features that were not developed due to issues with compiler version issues 
 
-\section{Project Requirements}
-The Reaction Timer requirements are outlined in problem number 6.5.6 of FPGA Prototyping By SystemVerilog Examples, by Pong Chu. The project is designed to measure the reaction time to a visual stimulus. The design uses the following criteria:
+\section{Project Description}
+The Multicolored LED control system is designed to highlight the flexibility of developing softcore systems. Based on the 32bit Microblaze softcore, built on the Artix-7, this project provides a base foundation for the development of more advanced features. The core functionality of this project allows for the control of the two RGB LEDs present on the Nexys 4 DDR development board. Each LED color can be set or cleared independently, and tied to a variety of control mechanisms.
 
-\begin{enumerate}
-	\item Three Input Buttons: Clear, Start, and Stop
-	\item Pressing the Clear button returns the program to the initial state.
-	\item Pressing the Start button initializes the test.
-	\item After a random time between 2 and 15 seconds, the stimulus LED is turned on and the reaction timer is started.
-	\item The player then has up to one second to press the Stop button. If the timer reaches one second, the player "loses".
-	\item Pressing the Stop button before the stimulus is generated results in a "false start", producing an error
-\end{enumerate} 
-
-In addition to the 7-Segment display, I have implemented one of the RGB LEDs to allow for state identification. This not only allows for a more visable game interface, but allows for debugging if necessary. The 7-Segment display will show different values, depending on the state of the game. The following table identifies the 7-Segment Display and RGB LED values for the particular states.
 
 \begin{table}[h!]
 	\begin{center}
-		\caption{State Vales of 7-Segment Display and RGB LED}
+		\caption{Color Configurations}
 		\label{table:table1}
 		\begin{tabular}{l l l}
-			\textbf{State} & \textbf{7-Segment Display} & \textbf{RGB LED}\\
+			\textbf{Color} & \textbf{RGB Values} \\
 			\hline
-			Ready & H I 0 0 & Blue\\
-			Start & 0 0 0 0 & Blue\\
-			Game & Run Time & Off\\
-			Error & 9 9 9 9 & Yellow\\
-			Win & Reflex Time & Green\\
-			Lose & 1 0 0 0 & Red
+			Off  &  0 0 0 \\
+			Red & 1 0 0 \\
+			Green & 0 1 0 \\
+			Blue & 0 0 1 \\
+			Yellow & 1 1 0 \\
+			Cyan & 0 1 1 \\
+			Purple & 1 0 1 \\
+			White & 1 1 1 
 		\end{tabular}
 	\end{center}
 \end{table}
-\newpage
 
-\section{Thought Process and ASMD}
-At a high level, the reaction timer can be broken down in to a few core functions, those being the timing element(s) and the display element(s). The textbook provides great code examples for both of these elements, and I have implemented my own version of each for this design. In addition to the timing and display elements, a state machine can be used to better control the programs flow and operation. As you can see from the table on page 3, I have designed this system to make use of 6 states (Ready, Start, Game, Error, Win and Lose). A brief descrption of each state can be found below.
+\section{Thought Process}
+I came up with the idea to build out this application while working on implementing a PDM controller for the onboard microphone. I first included one of the multicolored LEDs to assist with state and value tracking. After some difficulties in successfully converting the pulsed data to a tangible audio signal, I decided to switch gears and write a core and wrapper to make use of the RGB LEDs as troubleshooting and and status indicators. 
 
-\medskip
-\textbf{Ready:}The Ready state is used as my default state, in which the game is held until the player presses the Start button (BTNR). If the player presses the Clear button (BTNC) at any time, the system returns to the Ready state.
+Much of this idea stems from my past work experience, as both a product development and applications engineer. Status LEDs provide a surprisingly large benefit, given their relative simplicity. I've written the core to allow for the setting and clearing of specific colors independently, allowing for various implementations. Each LED can be individually configured to display the colors as seen in above. The core's functionality can be expanded to include light intensity control (via pwm), Pulse frequency (for communications indicators), etc.
 
-\smallskip
-\textbf{Start:}When the Start button is pressed, a random number is generated and the timer begins to count towards that random number. When the random number of seconds has been reached, the device moves to the Game state. If the user presses the stop buttong when in this state, the system registers a "false start", and the system moves in to the Error state.
-
-\smallskip
-\textbf{Game: }When the Stimulus LED (LED0) is first turned on, the player has up to 1 second to press the Stop button (BTNL). If the player hits the Stop buttong during this time, the system moves to the Win state. If 1 second has elapsed, the system moves in to the Lose state.
-
-\smallskip
-\textbf{Win: }When the player wins the game, the 7-Segment displays= shows their raction time (in ms) and the RGB LED turns green. In order to leave the Win state, the player must press the Clear button.
-
-\smallskip
-\textbf{Lose: }When the player loses the game, the 7-Segment display shows 1000 and the RGB LED turns red. As with the Win state, the Clear Button must be pressed in order to leave the Lose state.
-
-\bigskip
-Below are the two versions of the ASMD diagrams used to program the reaction timer. These diagrams provided a general outline of how the state machine controlling the reaction timer operates, as well as state transitions. 
-
-\begin{figure}
-	\includegraphics[width=.9\linewidth]{pdfs/reaction_timer_asmd.pdf}
-	\caption{Initial ASMD with basic transitions}
-	\label{fig:ASMD1}
-\end{figure}
-
-\begin{figure}
-	\includegraphics[width=.9\linewidth]{pdfs/reaction_timer_asmd_v2.pdf}
-	\caption{Second Draft ASMD with More Detail}
-	\label{fig:ASMD2}
-\end{figure}
-
-As you can see, I have emphasized simplicity and code reusability for this project. In the next section, I will go in to more detail regarding the functionality of the Reaction Timer.
+	\begin{figure}[h!]
+		\includegraphics[width=.9\linewidth]{cr.JPG}
+		\caption{Example: Cyan and Yellow LED Configurations}
+	\end{figure}
 
 \newpage
 
-\section{Reaction Timer Functionality}
-As previously mentioned, the Reaction Timer makes use of a number of different elements, including the stopwatch and display modules. I have designed the stopwatch module to emulate the stopwatches used by coaches for athletic events. I've designed the stopwatch to work as a Binary Coded Decimal timer, counting up to 9 and incrementing the next decade. I have set each digit to be a 4 bit number (as seen in the code snipit below. This allows for 0-9 on the ms digits, and 0-F for the seconds digit. I have not capped the seconds digit at 9 to allow for the random 2-15 second time interval to make use of that value (maximizing code reusability).
+\section{Core Code}
+The core functionality of the RGB LED controller is reduced to two SystemVerilog files, called MLED.sv and bui\_mled\_core.sv. The MLED file creates the basic MLED (short for Multicolored LED) element, which consists of three inputs, r, g, and b for the corresponding independent LED colors, and a three bit output which corresponds to the "register" value for the LED. This code also handles in clocking in of the individual values via an input clock signal.
 
-\begin{lstlisting}
-    //Declarations
-    localparam DVSR = 100000;
-    //milisecond registers
-    logic [24:0] ms_reg;
-    logic [24:0] ms_next;
+\begin{lstlisting}[language=Verilog]
+module MLED(
+        input logic clk, reset,
+        input logic red, green, blue,
+        output logic [2:0] led_out
+    );
+\end{lstlisting}
+
+This MLED element is then passed along as a component of the core (bui\_mled\_core.sv). The core is responsible for generating two MLED elements (the Nexys 4 board has two RGB LEDs), as well as creating the wrapper function. The basic wrapper circuit consists of a register element which holds the values for each of the individual RGB elements in the LEDs. I have written this core such that each LED is represented by a Byte. For this implementation, the mled0 and mled1 components values are determined by the 3 least significant Bits of the least significant two Bytes of the data register (address 0x00).  This basic implementation allows for the configuration of the LED elements without complex addressing (which will be addressed below).
+
+\newpage
+
+\begin{lstlisting}[language = Verilog]
+module bui_mled_core(
+    // general signals
+    input logic clk, reset,
     
-    //decade registers (seconds, ds, cs, ms)
-    logic [3:0] d3_reg, d2_reg, d1_reg, d0_reg;
-    logic [3:0] d3_next, d2_next, d1_next, d0_next;
+    // slot interface
+    input logic cs,
+    input logic read,
+    input logic write,
+    input logic [4:0] addr,
+    input logic [31:0] wr_data,
+    output logic [31:0] rd_data,
+    
+    // LED Ports
+    output logic [2:0] mled0, mled1
+    );
+    logic [31:0] data_reg;      // create a data register
+    
+    // Initialize both rbg LEDS
+    // MLED 0 - Byte 0
+    MLED led0 (.clk(clk), .reset(reset), .red(data_reg[0]), .green(data_reg[1]), 
+               .blue(data_reg[2]), .led_out(mled0));
+    // MLED 1 - Byte 1
+    MLED led1 (.clk(clk), .reset(reset), .red(data_reg[8]), .green(data_reg[9]), 
+                          .blue(data_reg[10]), .led_out(mled1));
+                                         
+    always_ff @(posedge clk, posedge reset)
+        begin
+            if(reset)
+                data_reg <= 0;          // clear the data
+            else
+                data_reg <= wr_data;    // load in new data 
+        end  
+    assign rd_data = 0;     // read data currently not used 
+endmodule
 \end{lstlisting}
 
-For the 7-Segment display control, I have modified the values for Hex codes A and B (1010 and 1011) to display H and I. The code segment below shows the case statement used to "decode" the number to the required display settings.
-
-\begin{lstlisting}
-always_comb
-begin
-        case(val)
-             4'h0: sseg[6:0]=7'b1000000; // '0'
-             4'h1: sseg[6:0]=7'b1111001; // '1'
-             4'h2: sseg[6:0]=7'b0100100; // '2'
-             4'h3: sseg[6:0]=7'b0110000; // '3'
-             4'h4: sseg[6:0]=7'b0011001; // '4'
-             4'h5: sseg[6:0]=7'b0010010; // '5'
-             4'h6: sseg[6:0]=7'b0000010; // '6'
-             4'h7: sseg[6:0]=7'b1111000; // '7'
-             4'h8: sseg[6:0]=7'b0000000; // '8'
-             4'h9: sseg[6:0]=7'b0010000; // '9'
-             4'ha: sseg[6:0]=7'b0001001; // 'H'
-             4'hb: sseg[6:0]=7'b1001111; // 'I' 
-             4'hc: sseg[6:0]=7'b0000110; // 'E' 
-             4'hd: sseg[6:0]=7'b0000110; // 'E' 
-             4'he: sseg[6:0]=7'b0000110; // 'E' 
-             default: sseg[6:0]=7'b1111111; 
-         endcase
-         sseg[7] = dp;
- end
-\end{lstlisting}
-
-The final submodule used for the implementation of the Reaction Timer is the random number generator. I made use of Dr. Schubert's 168 bit Fibonacci Pi generator, modified to grab 4 arbitrary bits (in this case 110-113 of the machine state]. The random number generator is constantly running, making it more difficult to predict the timing.
 
 
-\smallskip
-To address the issue of the constantly running random number generator, I've made use of an additional register which stores the random number (in seconds). This prevents the random time from changing while the game is in the Start state.
-
-
-\smallskip
-The top level design, in addition to implementing the modules mentioned above, defines the remaining game logic. This logic covers the state transitions, display configurations (LEDs and 7-Segment Display values), memory registers (timer values, state values, etc, seen below).  Since much of this code is heavily commented and exceeds the marigins for this document, I have posted the code on GitHub to be viewed at anytime. it may be found at: The complete code can be found on github.
+\section{Microblaze Implementation}
+Now that the core has been built up, it must be integrated into the Microblaze. This is accomplished my implementing the wrapper described above into the mmio\_sys\_vanilla.sv file originally provided by Pong Chu. I have expanded the verilog header file to add a 14th slot for the MLED core. The code below ties the mled core to the mmio unit, which is ultimately tied to the cpu via the bridge code (also provided by Chu).
 
 \newpage
-\section{Design Verification}
-The Reaction Timer has been verified through operation and manual testing. By taking advantage of the RGB LED, I am able to determine which state the device is in, as well as verify the timing with an external source. You can see in Table \ref{table:table1} that the RGB LED color indicates which state it is currently in. For future designs, I plan on taking advantage of the simulation techniques to quickly verify the design. Since this design was manually verified, I have provided video documentation showing the functionality of the system. To support the video, below you can see images of the game in it's various states.
 
-\begin{center}
-	\begin{figure}
-		\includegraphics[width=.9\linewidth]{Ready.JPG}
-		\caption{Ready State: Blue RGB LED and HI message}
-		\label{fig:ReadyImg}
-	\end{figure}
+\begin{lstlisting}[language=Verilog]
+    // slot 14: Multicolored LED
+    bui_mled_core led_slot14(
+    .clk(clk),
+    .reset(reset),
+    .cs(cs_array[`S14_3LED]),
+    .read(mem_rd_array[`S14_3LED]),
+    .write(mem_wr_array[`S14_3LED]),
+    .addr(reg_addr_array[`S14_3LED]),
+    .rd_data(rd_data_array[`S14_3LED]),
+    .wr_data(wr_data_array[`S14_3LED]),
+    .mled0(rgb_led1),
+    .mled1(rgb_led2)
+    );
+\end{lstlisting}
 
-	\begin{figure}
-		\includegraphics[width=.9\linewidth]{Game.JPG}
-		\caption{Game State: Stimulus LED, No RGB LED, and Current Time}
-		\label{fig:GameImg}
-	\end{figure}
+From here, we can begin to develop the software portion of the project.
 
-	\begin{figure}
-		\includegraphics[width=.9\linewidth]{Win.JPG}
-		\caption{Win State: Green RGB LED and Reaction Time}
-		\label{fig:WinImg}
-	\end{figure}
 
-	\begin{figure}
-		\includegraphics[width=.9\linewidth]{Lose.JPG}
-		\caption{Lose State:  Red RGB LED, and 1000 Count}
-		\label{fig:LoseImg}
-	\end{figure}
+\section{Software Implementation}
+The software impelmentation for this project comprises some of the vanilla test project's code, which I have made use of as a debugging tool throughout development. The core code for this project surrounds the BUI\_3LED.h and BUI\_3LED.cpp files. The names are different simply due to the way development occured, there is no particular reason for the change in name. These files were programmed in a similar fashion to the GPIO\_Core code files. I have set up the constructor and fuctions in a way that allow for the individual configuration of each color and each led. Each of the set and clear functions takes an unsigned 8 bit integer argument as a pseudoaddress. I refer to this as a pseudoaddress simply because, as indicated previously, the least significant Byte is reserved for MLED0\/RGB\_LED1, and the 2nd Byte is reserved for MLED1\/RGB\_LED2. Each function then sets or clears the MLEDs specific color (Red, Green, or Blue). The code below shows the constructor and function prototypes for the mLED class.
 
-	\begin{figure}
-		\includegraphics[width=.9\linewidth]{Error.JPG}
-		\caption{Error State: Yellow LED and 9999 Display Value}
-		\label{fig:ReadyImg}
-	\end{figure}
-\end{center}
+\begin{lstlisting}[language=C++]
+class mLED {
+public:
+	// Register Map
+   enum {
+      DATA_REG = 0 /**< input data register */
+   };
+   // Constructor / Destructor 
+   mLED(uint32_t core_base_addr);
+   ~mLED();                  // not used
 
+   /* methods */
+   uint32_t read();
+   void write(uint32_t data);
+   // set color function
+   void setRed(uint8_t led);
+   void setGreen(uint8_t led);
+   void setBlue(uint8_t led);
+   // clear color function
+   void clrRed(uint8_t led);
+   void clrGreen(uint8_t led);
+   void clrBlue(uint8_t led);
+
+private:
+   uint32_t base_addr;
+   uint32_t wr_data;
+};
+\end{lstlisting}
+
+\newpage
+As you can see, the provided functionality for this project is straight forward. Simply set or clear the particular color for the led that is passed into the function. Below is the code for both setRed and clrRed, the Green and Blue functions are written in a similar fashion.
+
+\begin{lstlisting}[language=C++]
+// Set Red LED Bit (1 or 9)
+void mLED::setRed(uint8_t led) {
+	uint32_t red;
+	if(led==1)
+		red=0x100;
+	else
+		red=0x1;
+	write(red);
+}
+
+// Clear Red LED Bit
+void mLED::clrRed(uint8_t led){
+	uint32_t dat = read();
+	if(led==1)
+		write(dat & ~0x100);
+	else
+		write(dat & ~0x1);
+}
+\end{lstlisting}
+
+These functions were tested by strobing through different colors using the mled\_check function (shown below). The functionality here can be expanded to use the LEDs for a variety of functions, including strobing during UART communications, indicate battery charge status\/level, etc.
+
+\begin{lstlisting}[language=C++]
+void mled_check(mLED *mled_p) {
+	int i;
+	for (i = 0; i < 5	; i++)
+	{
+		mled_p->setRed(0);
+		sleep_ms(1000);
+		uart.disp("led red \n");
+		mled_p->setGreen(0);
+		sleep_ms(500);
+		uart.disp("led green\n");
+		mled_p->clrRed(0);
+		sleep_ms(500);
+		mled_p->setBlue(1);
+		sleep_ms(500);
+		mled_p->clrGreen(0);
+		sleep_ms(500);
+		uart.disp("led blue\n");
+		mled_p->clrBlue(1);
+		sleep_ms(500);
+	}
+}
+\end{lstlisting}
 
 \end{document}

@@ -16,17 +16,11 @@
 
 class mLED {
 public:
-   /**
-    * register map
-    *
-    */
+	// Register Map
    enum {
       DATA_REG = 0 /**< input data register */
    };
-   /**
-    * constructor.
-    *
-    */
+   // Constructor / Destructor
    mLED(uint32_t core_base_addr);
    ~mLED();                  // not used
 

@@ -1,0 +1,5 @@
+17:38:57 INFO  : Registering command handlers for SDK TCF services
+17:38:58 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\runne\Desktop\Soc_FPGA\Final_Bui\temp_xsdb_launch_script.tcl
+17:39:02 INFO  : XSCT server has started successfully.
+17:39:02 INFO  : Successfully done setting XSCT server connection channel  
+17:39:02 INFO  : Successfully done setting SDK workspace  

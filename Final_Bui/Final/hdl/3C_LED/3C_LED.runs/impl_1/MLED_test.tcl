@@ -66,7 +66,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint MLED_test_routed.dcp
-  set_property webtalk.parent_dir C:/Users/jbu021/Soc_FPGA/3C_LED/3C_LED.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/3C_LED/3C_LED.cache/wt [current_project]
   catch { write_mem_info -force MLED_test.mmi }
   write_bitstream -force MLED_test.bit 
   catch {write_debug_probes -quiet -force MLED_test}

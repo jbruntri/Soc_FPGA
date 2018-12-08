@@ -105,7 +105,7 @@ module mmio_sys_vanilla
     .din(sw)
     );
     
-    // slot 4: Multicolored LED
+    // slot 14: Multicolored LED
     bui_mled_core led_slot14(
     .clk(clk),
     .reset(reset),

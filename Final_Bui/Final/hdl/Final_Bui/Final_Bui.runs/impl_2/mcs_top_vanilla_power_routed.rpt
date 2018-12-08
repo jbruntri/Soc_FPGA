@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Fri Dec  7 10:57:50 2018
-| Host             : USL09013W running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date             : Fri Dec  7 17:30:28 2018
+| Host             : DESKTOP-RO8D54L running 64-bit major release  (build 9200)
 | Command          : report_power -file mcs_top_vanilla_power_routed.rpt -pb mcs_top_vanilla_power_summary_routed.pb -rpx mcs_top_vanilla_power_routed.rpx
 | Design           : mcs_top_vanilla
 | Device           : xc7a100tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.128        |
+| Total On-Chip Power (W)  | 0.130        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.029        |
+| Dynamic (W)              | 0.032        |
 | Device Static (W)        | 0.099        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.4         |
@@ -53,7 +53,7 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.005 |        3 |       --- |             --- |
-| Slice Logic              |     0.002 |     2091 |       --- |             --- |
+| Slice Logic              |     0.002 |     2109 |       --- |             --- |
 |   LUT as Logic           |     0.001 |      687 |     63400 |            1.08 |
 |   LUT as Distributed RAM |    <0.001 |      224 |     19000 |            1.18 |
 |   CARRY4                 |    <0.001 |       32 |     15850 |            0.20 |
@@ -61,11 +61,11 @@ Table of Contents
 |   F7/F8 Muxes            |    <0.001 |       32 |     63400 |            0.05 |
 |   LUT as Shift Register  |    <0.001 |       43 |     19000 |            0.23 |
 |   Others                 |     0.000 |      375 |       --- |             --- |
-| Signals                  |     0.006 |     1358 |       --- |             --- |
+| Signals                  |     0.006 |     1378 |       --- |             --- |
 | Block RAM                |     0.015 |       32 |       135 |           23.70 |
-| I/O                      |    <0.001 |       42 |       210 |           20.00 |
+| I/O                      |     0.003 |       42 |       210 |           20.00 |
 | Static Power             |     0.099 |          |           |                 |
-| Total                    |     0.128 |          |           |                 |
+| Total                    |     0.130 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,9 +75,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.043 |       0.028 |      0.016 |
+| Vccint    |       1.000 |     0.043 |       0.027 |      0.016 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -144,9 +144,9 @@ Table of Contents
 +------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                           | Power (W) |
 +------------------------------------------------------------------------------------------------+-----------+
-| mcs_top_vanilla                                                                                |     0.029 |
-|   cpu_unit                                                                                     |     0.026 |
-|     inst                                                                                       |     0.026 |
+| mcs_top_vanilla                                                                                |     0.032 |
+|   cpu_unit                                                                                     |     0.025 |
+|     inst                                                                                       |     0.025 |
 |       dlmb                                                                                     |    <0.001 |
 |         U0                                                                                     |    <0.001 |
 |       dlmb_cntlr                                                                               |    <0.001 |

@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Fri Dec  7 17:16:29 2018
+# Process ID: 3300
+# Current directory: C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7636 C:\Users\runne\Desktop\Soc_FPGA\Final_Bui\Final\hdl\Final_Bui\Final_Bui.xpr
+# Log file: C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui/vivado.log
+# Journal file: C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui/Final_Bui.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/jbu021/Soc_FPGA/Final_Bui' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 777.047 ; gain = 98.609
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_2 -jobs 4
+[Fri Dec  7 17:27:58 2018] Launched synth_1...
+Run output will be captured here: C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui/Final_Bui.runs/synth_1/runme.log
+[Fri Dec  7 17:27:58 2018] Launched impl_2...
+Run output will be captured here: C:/Users/runne/Desktop/Soc_FPGA/Final_Bui/Final/hdl/Final_Bui/Final_Bui.runs/impl_2/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  7 17:38:33 2018...

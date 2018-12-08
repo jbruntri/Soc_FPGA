@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Project Description}{3}
+\contentsline {section}{\numberline {3}Thought Process}{3}
+\contentsline {section}{\numberline {4}Core Code}{4}
+\contentsline {section}{\numberline {5}Microblaze Implementation}{5}
+\contentsline {section}{\numberline {6}Software Implementation}{6}
