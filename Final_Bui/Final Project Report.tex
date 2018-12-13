@@ -1,14 +1,19 @@
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{listings} % nice code layout
 \usepackage[section]{placeins}
 \usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
 \usepackage[utf8]{inputenc}
+\usepackage{listings} % nice code layout
 \lstset{language = Verilog}
 \lstset{language = C++}
 \graphicspath{ {./img/} }
-
-
 \usepackage[a4paper, margin=1.25in]{geometry}
 
 
@@ -221,4 +226,9 @@ void mled_check(mLED *mled_p) {
 }
 \end{lstlisting}
 
+
+\section{Future Development}
+The implementation described above is simply a foundation. There are several improvements and additional features that would increase the usability of the code above. The first change would be to separate each LED into a separate register. Making use of 32bits, we could expand the functionality to include a PWM based "intensity" control. Initial thinking would be to use the three most significant Bytes to be holding registers (1 Byte per color) for the intensity value. By using a range of 0-255, the intensity of each color could be individually controlled, allowing for a more diverse color spectrum. A 3rd register could be used for frequency control for various strobing or error code communications. 
+
+All of the code for this project may be found \href{https://github.com/jbruntri/Soc_FPGA}{here.}
 \end{document}

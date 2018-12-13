@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               2M
+Start Address      0x00000000
+End Address        0x001FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x000E7D0B    Dec 13 10:38:54 2018    C:/Users/runne/Desktop/Soc_FPGA/7seg/HDL/seven_seg_proj/seven_seg_proj.runs/impl_1/mcs_top_vanilla.bit

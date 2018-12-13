@@ -1,0 +1,14 @@
+/********************************************************************
+ * @file bui_sseg_core.h
+ *
+ * @brief 7-segment LED Display Driver
+ *
+ * @author J. Bui
+ *********************************************************************/
+ 
+ #ifndef 	_BUI_SSEG_CORE_H_INCLUDED
+ #define	_BUI_SSEG_CORE_H_INCLUDED
+ 
+ 
+ 
+ 

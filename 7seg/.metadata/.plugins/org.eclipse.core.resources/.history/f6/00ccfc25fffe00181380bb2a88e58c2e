@@ -1,0 +1,51 @@
+/*
+ * Empty C++ Application
+ */
+
+#include "gpio_cores.h"
+#include "bui_sseg_core.h"
+
+void sseg_check(ssegCore *sseg_p) {
+   int i,j,k,l,m, n;
+   uint8_t dp;
+
+   //turn off led
+   for (i = 0; i < 8; i++) {
+      sseg_p->write_1ptn(0xff, i);
+   }
+   //turn off all decimal points
+   sseg_p->set_dp(0x00);
+
+   // display 0x0 to 0xf in 4 epochs
+   // upper 4  digits mirror the lower 4
+   for (n = 0; n < 15; n++) {
+      for (i = 0; i < 16; i++) {
+    	  for(j = 0; j <16; j++)
+    	  {
+    		  for(k=0; k<16; k++){
+
+
+    		  sseg_p->write_1ptn(sseg_p->hexToDisp(k), 0);
+    		  sseg_p->write_1ptn(sseg_p->hexToDisp(j), 1);
+    		  sseg_p->write_1ptn(sseg_p->hexToDisp(i), 2);
+    		  sseg_p->write_1ptn(sseg_p->hexToDisp(n), 3);
+
+    		  sleep_ms(300);
+    		  }
+    	  }
+      } // for i
+      if(n>0)
+    	  set_dp(0x08);
+   }  // for n
+
+
+}
+
+ssegCore sseg(get_slot_addr(BRIDGE_BASE, S8_SSEG));
+
+
+int main()
+{
+    sseg_check(&sseg);
+    return 0;
+}

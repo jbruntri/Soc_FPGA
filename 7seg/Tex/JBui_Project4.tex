@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\usepackage[utf8]{inputenc}
+\usepackage{listings} % nice code layout
+\lstset{language = Verilog}
+\lstset{language = C++}
+\graphicspath{ {./img/} }
+\usepackage[a4paper, margin=1.25in]{geometry}
+
+
+\author{Justin Bui}
+\title{Microblaze Implementation of a 7 Segment Display Controller}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+This document outlines the design and implementation for the 7 Segment Display system. This project makes use of the Digilent NEXYS 4 Artix-7 FPGA development board to implement a Microblaze based 7 Segment display system. The document below includes the functional description, code portions, and implementation of the project. 
+
+
+\section{Project Description}
+The 7 Segment display control system is designed to control the 8 displays present on the Nexys 4 development board. Based on the 32bit Microblaze softcore, this project provides the HDL and drivers necessary to make use of the 7 Segment displays in which ever manner use deems fit. Each display module can be configured individually (that is, independently from one another), allowing for extended flexibility. 
+
+\section{Core Code}
+The core functionality of the 7 Segment Display controller is derived from two System Verilog files, the disp\_hex\_mux.sv and bui\_disp\_core.sv. The primary module comprises all 8 of the display modules, as well as control for the decimal points. 
+
+\end{document}

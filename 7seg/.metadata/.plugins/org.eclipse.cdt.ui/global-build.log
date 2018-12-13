@@ -1,0 +1,1725 @@
+11:02:23 **** Build of project sseg ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+11:05:30 **** Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   3108	   5328	   14d0	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:05:56 **** Auto Build of configuration Debug for project demo ****
+make all 
+make: Nothing to be done for `all'.
+11:08:40 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+In file included from ../src/chu_init.cpp:13:0:
+../src/chu_init.h:35:10: fatal error: timer_core.h: No such file or directory
+ #include "timer_core.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/chu_init.o] Error 1
+11:09:00 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2908	    276	   3128	   6312	   18a8	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:09:33 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2908	    276	   3128	   6312	   18a8	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:10:21 **** Auto Build of configuration Debug for project demo ****
+make all 
+make: Nothing to be done for `all'.
+11:11:07 **** Auto Build of configuration Debug for project demo ****
+make all 
+make: Nothing to be done for `all'.
+11:11:31 **** Clean-only build of configuration Debug for project demo ****
+make clean 
+rm -rf  ./src/main.d  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o  ./src/chu_init.d ./src/gpio_cores.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d  demo.elf.size  demo.elf
+' '
+11:11:32 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2908	    276	   3128	   6312	   18a8	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:11:53 **** Auto Build of configuration Debug for project demo ****
+make all 
+make: Nothing to be done for `all'.
+11:12:34 **** Auto Build of configuration Debug for project demo ****
+make all 
+make: Nothing to be done for `all'.
+11:13:40 **** Auto Build of configuration Debug for project demo ****
+make all 
+make: Nothing to be done for `all'.
+11:14:06 **** Auto Build of configuration Debug for project demo ****
+make all 
+make: Nothing to be done for `all'.
+11:20:59 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp:12:1: error: 'ssegCore' does not name a type; did you mean 'SsegCore'?
+ ssegCore::ssegCore(uint32_t core_base_addr) {
+ ^~~~~~~~
+ SsegCore
+../src/sseg_core.cpp:19:1: error: 'ssegCore' does not name a type; did you mean 'SsegCore'?
+ ssegCore::~ssegCore() {
+ ^~~~~~~~
+ SsegCore
+../src/sseg_core.cpp:23:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_led() {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_led()':
+../src/sseg_core.cpp:30:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[3 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:34:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:34:20: note: suggested alternative: 'p'
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:37:13: error: 'base_addr' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+             ^
+../src/chu_io_rw.h:45:29: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                             ^~~~~~~~~
+../src/sseg_core.cpp:37:24: error: 'DATA_LOW_REG' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp:40:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[7 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:44:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:44:20: note: suggested alternative: 'p'
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:47:24: error: 'DATA_HIGH_REG' was not declared in this scope
+    io_write(base_addr, DATA_HIGH_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:50:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_8ptn(uint8_t *ptn_array) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_8ptn(uint8_t*)':
+../src/sseg_core.cpp:54:7: error: 'ptn_buf' was not declared in this scope
+       ptn_buf[i] = *ptn_array;
+       ^~~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:60:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_1ptn(uint8_t pattern, int pos) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_1ptn(uint8_t, int)':
+../src/sseg_core.cpp:61:4: error: 'ptn_buf' was not declared in this scope
+    ptn_buf[pos] = pattern;
+    ^~~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:67:6: error: 'ssegCore' has not been declared
+ void ssegCore::set_dp(uint8_t pt) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void set_dp(uint8_t)':
+../src/sseg_core.cpp:68:4: error: 'dp' was not declared in this scope
+    dp = ~pt;     // active low
+    ^~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:73:9: error: 'ssegCore' has not been declared
+ uint8_t ssegCore::h2s(int hex) {
+         ^~~~~~~~
+make: *** [src/sseg_core.o] Error 1
+11:21:16 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp:12:1: error: 'ssegCore' does not name a type; did you mean 'SsegCore'?
+ ssegCore::ssegCore(uint32_t core_base_addr) {
+ ^~~~~~~~
+ SsegCore
+../src/sseg_core.cpp:19:1: error: 'ssegCore' does not name a type; did you mean 'SsegCore'?
+ ssegCore::~ssegCore() {
+ ^~~~~~~~
+ SsegCore
+../src/sseg_core.cpp:23:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_led() {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_led()':
+../src/sseg_core.cpp:30:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[3 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:34:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:34:20: note: suggested alternative: 'p'
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:37:13: error: 'base_addr' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+             ^
+../src/chu_io_rw.h:45:29: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                             ^~~~~~~~~
+../src/sseg_core.cpp:37:24: error: 'DATA_LOW_REG' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp:40:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[7 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:44:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:44:20: note: suggested alternative: 'p'
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:47:24: error: 'DATA_HIGH_REG' was not declared in this scope
+    io_write(base_addr, DATA_HIGH_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:50:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_8ptn(uint8_t *ptn_array) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_8ptn(uint8_t*)':
+../src/sseg_core.cpp:54:7: error: 'ptn_buf' was not declared in this scope
+       ptn_buf[i] = *ptn_array;
+       ^~~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:60:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_1ptn(uint8_t pattern, int pos) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_1ptn(uint8_t, int)':
+../src/sseg_core.cpp:61:4: error: 'ptn_buf' was not declared in this scope
+    ptn_buf[pos] = pattern;
+    ^~~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:67:6: error: 'ssegCore' has not been declared
+ void ssegCore::set_dp(uint8_t pt) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void set_dp(uint8_t)':
+../src/sseg_core.cpp:68:4: error: 'dp' was not declared in this scope
+    dp = ~pt;     // active low
+    ^~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:73:9: error: 'ssegCore' has not been declared
+ uint8_t ssegCore::h2s(int hex) {
+         ^~~~~~~~
+make: *** [src/sseg_core.o] Error 1
+11:21:34 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp:12:1: error: 'ssegCore' does not name a type; did you mean 'SsegCore'?
+ ssegCore::ssegCore(uint32_t core_base_addr) {
+ ^~~~~~~~
+ SsegCore
+../src/sseg_core.cpp:19:1: error: 'ssegCore' does not name a type; did you mean 'SsegCore'?
+ ssegCore::~ssegCore() {
+ ^~~~~~~~
+ SsegCore
+../src/sseg_core.cpp:23:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_disp() {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_disp()':
+../src/sseg_core.cpp:30:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[3 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:34:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:34:20: note: suggested alternative: 'p'
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:37:13: error: 'base_addr' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+             ^
+../src/chu_io_rw.h:45:29: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                             ^~~~~~~~~
+../src/sseg_core.cpp:37:24: error: 'DATA_LOW_REG' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp:40:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[7 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:44:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:44:20: note: suggested alternative: 'p'
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:47:24: error: 'DATA_HIGH_REG' was not declared in this scope
+    io_write(base_addr, DATA_HIGH_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:50:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_8ptn(uint8_t *ptn_array) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_8ptn(uint8_t*)':
+../src/sseg_core.cpp:54:7: error: 'ptn_buf' was not declared in this scope
+       ptn_buf[i] = *ptn_array;
+       ^~~~~~~
+../src/sseg_core.cpp:57:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:57:4: note: suggested alternative: 'write_8ptn'
+    write_led();
+    ^~~~~~~~~
+    write_8ptn
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:60:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_1ptn(uint8_t pattern, int pos) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_1ptn(uint8_t, int)':
+../src/sseg_core.cpp:61:4: error: 'ptn_buf' was not declared in this scope
+    ptn_buf[pos] = pattern;
+    ^~~~~~~
+../src/sseg_core.cpp:62:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:62:4: note: suggested alternative: 'write_1ptn'
+    write_led();
+    ^~~~~~~~~
+    write_1ptn
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:67:6: error: 'ssegCore' has not been declared
+ void ssegCore::set_dp(uint8_t pt) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void set_dp(uint8_t)':
+../src/sseg_core.cpp:68:4: error: 'dp' was not declared in this scope
+    dp = ~pt;     // active low
+    ^~
+../src/sseg_core.cpp:69:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:69:4: note: suggested alternative: 'write_1ptn'
+    write_led();
+    ^~~~~~~~~
+    write_1ptn
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:73:9: error: 'ssegCore' has not been declared
+ uint8_t ssegCore::h2s(int hex) {
+         ^~~~~~~~
+make: *** [src/sseg_core.o] Error 1
+11:21:41 **** Clean-only build of configuration Debug for project demo ****
+make clean 
+rm -rf  ./src/main.d  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o  ./src/chu_init.d ./src/gpio_cores.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d  demo.elf.size  demo.elf
+' '
+11:21:41 **** Clean-only build of project sseg ****
+make -k clean 
+make -C microblaze_I/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_I/libsrc/cpu_v2_7/src -s clean 
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s clean 
+make -C microblaze_I/libsrc/standalone_v6_7/src -s clean 
+rm -f microblaze_I/lib/libxil.a
+11:21:43 **** Build of project sseg ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_2/src"
+make -C microblaze_I/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_7/src"
+make -C microblaze_I/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_5/src"
+make -C microblaze_I/libsrc/iomodule_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:170:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:216:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:55:0,
+                 from xiomodule.h:265,
+                 from xiomodule.c:60:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:344:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:384:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:434:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:480:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:524:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:629:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:132:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:705:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:107:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:168:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+xiomodule_l.c:153:15: warning: variable 'Register' set but not used [-Wunused-but-set-variable]
+  volatile u32 Register;   /* used as bit bucket */
+               ^~~~~~~~
+"Running Make libs in microblaze_I/libsrc/standalone_v6_7/src"
+make -C microblaze_I/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+11:21:57 **** Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp:12:1: error: 'ssegCore' does not name a type; did you mean 'SsegCore'?
+ ssegCore::ssegCore(uint32_t core_base_addr) {
+ ^~~~~~~~
+ SsegCore
+../src/sseg_core.cpp:19:1: error: 'ssegCore' does not name a type; did you mean 'SsegCore'?
+ ssegCore::~ssegCore() {
+ ^~~~~~~~
+ SsegCore
+../src/sseg_core.cpp:23:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_disp() {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_disp()':
+../src/sseg_core.cpp:30:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[3 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:34:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:34:20: note: suggested alternative: 'p'
+       p = bit_read(dp, i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:37:13: error: 'base_addr' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+             ^
+../src/chu_io_rw.h:45:29: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                             ^~~~~~~~~
+../src/sseg_core.cpp:37:24: error: 'DATA_LOW_REG' was not declared in this scope
+    io_write(base_addr, DATA_LOW_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp:40:28: error: 'ptn_buf' was not declared in this scope
+       word = (word << 8) | ptn_buf[7 - i];
+                            ^~~~~~~
+In file included from ../src/sseg_core.h:13:0,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:44:20: error: 'dp' was not declared in this scope
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+../src/sseg_core.cpp:44:20: note: suggested alternative: 'p'
+       p = bit_read(dp, 4 + i);
+                    ^
+../src/chu_init.h:117:30: note: in definition of macro 'bit_read'
+ #endif  // _CHU_INIT_H_INCLUDED
+
+                              ^~~ 
+In file included from ../src/chu_init.h:33:0,
+                 from ../src/sseg_core.h:13,
+                 from ../src/sseg_core.cpp:10:
+../src/sseg_core.cpp:47:24: error: 'DATA_HIGH_REG' was not declared in this scope
+    io_write(base_addr, DATA_HIGH_REG, word);
+                        ^
+../src/chu_io_rw.h:45:45: note: in definition of macro 'io_write'
+    (*(volatile uint32_t *)((base_addr) + 4*(offset)) = (data))
+                                             ^~~~~~
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:50:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_8ptn(uint8_t *ptn_array) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_8ptn(uint8_t*)':
+../src/sseg_core.cpp:54:7: error: 'ptn_buf' was not declared in this scope
+       ptn_buf[i] = *ptn_array;
+       ^~~~~~~
+../src/sseg_core.cpp:57:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:57:4: note: suggested alternative: 'write_8ptn'
+    write_led();
+    ^~~~~~~~~
+    write_8ptn
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:60:6: error: 'ssegCore' has not been declared
+ void ssegCore::write_1ptn(uint8_t pattern, int pos) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void write_1ptn(uint8_t, int)':
+../src/sseg_core.cpp:61:4: error: 'ptn_buf' was not declared in this scope
+    ptn_buf[pos] = pattern;
+    ^~~~~~~
+../src/sseg_core.cpp:62:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:62:4: note: suggested alternative: 'write_1ptn'
+    write_led();
+    ^~~~~~~~~
+    write_1ptn
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:67:6: error: 'ssegCore' has not been declared
+ void ssegCore::set_dp(uint8_t pt) {
+      ^~~~~~~~
+../src/sseg_core.cpp: In function 'void set_dp(uint8_t)':
+../src/sseg_core.cpp:68:4: error: 'dp' was not declared in this scope
+    dp = ~pt;     // active low
+    ^~
+../src/sseg_core.cpp:69:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:69:4: note: suggested alternative: 'write_1ptn'
+    write_led();
+    ^~~~~~~~~
+    write_1ptn
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:73:9: error: 'ssegCore' has not been declared
+ uint8_t ssegCore::h2s(int hex) {
+         ^~~~~~~~
+make: *** [src/sseg_core.o] Error 1
+11:22:45 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp: In member function 'void ssegCore::write_8ptn(uint8_t*)':
+../src/sseg_core.cpp:57:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:57:4: note: suggested alternative: 'write_1ptn'
+    write_led();
+    ^~~~~~~~~
+    write_1ptn
+../src/sseg_core.cpp: In member function 'void ssegCore::write_1ptn(uint8_t, int)':
+../src/sseg_core.cpp:62:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:62:4: note: suggested alternative: 'write_1ptn'
+    write_led();
+    ^~~~~~~~~
+    write_1ptn
+../src/sseg_core.cpp: In member function 'void ssegCore::set_dp(uint8_t)':
+../src/sseg_core.cpp:69:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:69:4: note: suggested alternative: 'write_1ptn'
+    write_led();
+    ^~~~~~~~~
+    write_1ptn
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:73:30: error: no 'uint8_t ssegCore::h2s(int)' member function declared in class 'ssegCore'
+ uint8_t ssegCore::h2s(int hex) {
+                              ^
+make: *** [src/sseg_core.o] Error 1
+11:23:36 **** Incremental Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp: In member function 'void ssegCore::write_8ptn(uint8_t*)':
+../src/sseg_core.cpp:57:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:57:4: note: suggested alternative: 'write_1ptn'
+    write_led();
+    ^~~~~~~~~
+    write_1ptn
+../src/sseg_core.cpp: In member function 'void ssegCore::write_1ptn(uint8_t, int)':
+../src/sseg_core.cpp:62:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:62:4: note: suggested alternative: 'write_1ptn'
+    write_led();
+    ^~~~~~~~~
+    write_1ptn
+../src/sseg_core.cpp: In member function 'void ssegCore::set_dp(uint8_t)':
+../src/sseg_core.cpp:69:4: error: 'write_led' was not declared in this scope
+    write_led();
+    ^~~~~~~~~
+../src/sseg_core.cpp:69:4: note: suggested alternative: 'write_1ptn'
+    write_led();
+    ^~~~~~~~~
+    write_1ptn
+../src/sseg_core.cpp: At global scope:
+../src/sseg_core.cpp:73:30: error: no 'uint8_t ssegCore::h2s(int)' member function declared in class 'ssegCore'
+ uint8_t ssegCore::h2s(int hex) {
+                              ^
+make: *** [src/sseg_core.o] Error 1
+11:24:24 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2908	    276	   3128	   6312	   18a8	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:25:57 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main_sampler_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_sampler_test.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_sampler_test.d" -MT"src/main_sampler_test.o" -o "src/main_sampler_test.o" "../src/main_sampler_test.cpp"
+../src/main_sampler_test.cpp:13:10: fatal error: xadc_core.h: No such file or directory
+ #include "xadc_core.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main_sampler_test.o] Error 1
+11:27:16 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:5:17: error: variable or field 'sseg_check' declared void
+ void sseg_check(SsegCore *sseg_p) {
+                 ^~~~~~~~
+../src/main.cc:5:17: error: 'SsegCore' was not declared in this scope
+../src/main.cc:5:27: error: 'sseg_p' was not declared in this scope
+ void sseg_check(SsegCore *sseg_p) {
+                           ^~~~~~
+../src/main.cc:40:1: error: 'ssegCore' does not name a type
+ ssegCore sseg(get_slot_addr(BRIDGE_BASE, S8_SSEG));
+ ^~~~~~~~
+../src/main.cc:43:11: error: '::main' must return 'int'
+ void main()
+           ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:45:17: error: 'sseg' was not declared in this scope
+     sseg_check(&sseg);
+                 ^~~~
+../src/main.cc:45:5: error: 'sseg_check' was not declared in this scope
+     sseg_check(&sseg);
+     ^~~~~~~~~~
+make: *** [src/main.o] Error 1
+11:27:54 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:23:37: error: 'class ssegCore' has no member named 'h2s'
+          sseg_p->write_1ptn(sseg_p->h2s(i + n * 4), 3 - i);
+                                     ^~~
+../src/main.cc:24:37: error: 'class ssegCore' has no member named 'h2s'
+          sseg_p->write_1ptn(sseg_p->h2s(i + n * 4), 7 - i);
+                                     ^~~
+../src/main.cc: At global scope:
+../src/main.cc:46:11: error: '::main' must return 'int'
+ void main()
+           ^
+make: *** [src/main.o] Error 1
+11:28:11 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:46:11: error: '::main' must return 'int'
+ void main()
+           ^
+make: *** [src/main.o] Error 1
+11:28:19 **** Clean-only build of configuration Debug for project demo ****
+make clean 
+rm -rf  ./src/main.d  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/main_sampler_test.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o  ./src/chu_init.d ./src/gpio_cores.d ./src/main_sampler_test.d ./src/sseg_core.d ./src/timer_core.d ./src/uart_core.d  demo.elf.size  demo.elf
+' '
+11:28:19 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:46:11: error: '::main' must return 'int'
+ void main()
+           ^
+make: *** [src/main.o] Error 1
+11:28:36 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10924	    284	   3144	  14352	   3810	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:33:05 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp: In member function 'void ssegCore::write_disp()':
+../src/sseg_core.cpp:24:11: warning: unused variable 'p' [-Wunused-variable]
+    int i, p;
+           ^
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10492	    284	   3144	  13920	   3660	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:33:53 **** Incremental Build of configuration Debug for project demo ****
+make all 
+make: Nothing to be done for `all'.
+11:35:10 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:9:11: warning: unused variable 'n' [-Wunused-variable]
+    int i, n;
+           ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4200	    284	   3140	   7624	   1dc8	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:37:06 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10148	    284	   3144	  13576	   3508	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:38:08 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10148	    284	   3144	  13576	   3508	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:42:08 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp: In member function 'void ssegCore::write_disp()':
+../src/sseg_core.cpp:24:11: warning: unused variable 'p' [-Wunused-variable]
+    int i, p;
+           ^
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10148	    284	   3144	  13576	   3508	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:43:35 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/sseg_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sseg_core.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sseg_core.d" -MT"src/sseg_core.o" -o "src/sseg_core.o" "../src/sseg_core.cpp"
+../src/sseg_core.cpp: In member function 'void ssegCore::write_disp()':
+../src/sseg_core.cpp:24:11: warning: unused variable 'p' [-Wunused-variable]
+    int i, p;
+           ^
+'Finished building: ../src/sseg_core.cpp'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10148	    284	   3144	  13576	   3508	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:43:48 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10148	    284	   3144	  13576	   3508	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:46:22 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:9:14: warning: unused variable 'l' [-Wunused-variable]
+    int i,j,k,l,m, n;
+              ^
+../src/main.cc:9:16: warning: unused variable 'm' [-Wunused-variable]
+    int i,j,k,l,m, n;
+                ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10308	    284	   3144	  13736	   35a8	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:47:05 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:38:8: error: 'set_dp' was not declared in this scope
+        set_dp(0x08);
+        ^~~~~~
+../src/main.cc:38:8: note: suggested alternative: 'sseg_p'
+        set_dp(0x08);
+        ^~~~~~
+        sseg_p
+../src/main.cc:9:14: warning: unused variable 'l' [-Wunused-variable]
+    int i,j,k,l,m, n;
+              ^
+../src/main.cc:9:16: warning: unused variable 'm' [-Wunused-variable]
+    int i,j,k,l,m, n;
+                ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+make: *** [src/main.o] Error 1
+11:47:24 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:9:14: warning: unused variable 'l' [-Wunused-variable]
+    int i,j,k,l,m, n;
+              ^
+../src/main.cc:9:16: warning: unused variable 'm' [-Wunused-variable]
+    int i,j,k,l,m, n;
+                ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10336	    284	   3140	  13760	   35c0	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:48:43 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:9:14: warning: unused variable 'l' [-Wunused-variable]
+    int i,j,k,l,m, n;
+              ^
+../src/main.cc:9:16: warning: unused variable 'm' [-Wunused-variable]
+    int i,j,k,l,m, n;
+                ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10280	    284	   3140	  13704	   3588	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:49:38 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:9:14: warning: unused variable 'l' [-Wunused-variable]
+    int i,j,k,l,m, n;
+              ^
+../src/main.cc:9:16: warning: unused variable 'm' [-Wunused-variable]
+    int i,j,k,l,m, n;
+                ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10280	    284	   3140	  13704	   3588	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:50:10 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:9:16: warning: unused variable 'l' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                ^
+../src/main.cc:9:18: warning: unused variable 'm' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                  ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10280	    284	   3140	  13704	   3588	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:50:56 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:9:16: warning: unused variable 'l' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                ^
+../src/main.cc:9:18: warning: unused variable 'm' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                  ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10280	    284	   3140	  13704	   3588	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:51:55 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:25:12: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+            if(j>0)
+            ^~
+../src/main.cc:27:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+         for(k=0; k<16; k++){
+         ^~~
+../src/main.cc:9:16: warning: unused variable 'l' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                ^
+../src/main.cc:9:18: warning: unused variable 'm' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                  ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10280	    284	   3140	  13704	   3588	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:52:18 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:25:12: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+            if(j>0)
+            ^~
+../src/main.cc:27:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+         for(k=0; k<16; k++){
+         ^~~
+../src/main.cc:9:16: warning: unused variable 'l' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                ^
+../src/main.cc:9:18: warning: unused variable 'm' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                  ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10280	    284	   3140	  13704	   3588	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:52:56 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:25:12: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+            if(j>0)
+            ^~
+../src/main.cc:27:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+         for(k=0; k<16; k++){
+         ^~~
+../src/main.cc:9:16: warning: unused variable 'l' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                ^
+../src/main.cc:9:18: warning: unused variable 'm' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                  ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10280	    284	   3140	  13704	   3588	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:53:47 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:9:16: warning: unused variable 'l' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                ^
+../src/main.cc:9:18: warning: unused variable 'm' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                  ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10280	    284	   3140	  13704	   3588	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:54:29 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:9:16: warning: unused variable 'l' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                ^
+../src/main.cc:9:18: warning: unused variable 'm' [-Wunused-variable]
+    int h,i,j,k,l,m;
+                  ^
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10276	    284	   3144	  13704	   3588	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:58:31 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10436	    284	   3144	  13864	   3628	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:58:56 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10524	    284	   3144	  13952	   3680	demo.elf
+'Finished building: demo.elf.size'
+' '
+11:59:38 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10524	    284	   3144	  13952	   3680	demo.elf
+'Finished building: demo.elf.size'
+' '
+12:00:05 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10524	    284	   3144	  13952	   3680	demo.elf
+'Finished building: demo.elf.size'
+' '
+12:00:12 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10524	    284	   3144	  13952	   3680	demo.elf
+'Finished building: demo.elf.size'
+' '
+12:01:09 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10524	    284	   3144	  13952	   3680	demo.elf
+'Finished building: demo.elf.size'
+' '
+12:01:41 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+../src/main.cc: In function 'int main()':
+../src/main.cc:59:3: error: 'msdelay' was not declared in this scope
+   msdelay(10000);
+   ^~~~~~~
+make: *** [src/main.o] Error 1
+12:01:53 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void sseg_check(ssegCore*)':
+../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
+    uint8_t dp;
+            ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10656	    284	   3140	  14080	   3700	demo.elf
+'Finished building: demo.elf.size'
+' '
