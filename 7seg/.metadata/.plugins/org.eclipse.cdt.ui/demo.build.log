@@ -1,12 +1,8 @@
-12:01:53 **** Auto Build of configuration Debug for project demo ****
+12:55:37 **** Auto Build of configuration Debug for project demo ****
 make all 
 'Building file: ../src/main.cc'
 'Invoking: MicroBlaze g++ compiler'
 mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
-../src/main.cc: In function 'void sseg_check(ssegCore*)':
-../src/main.cc:10:12: warning: unused variable 'dp' [-Wunused-variable]
-    uint8_t dp;
-            ^~
 'Finished building: ../src/main.cc'
 ' '
 'Building target: demo.elf'
@@ -21,5 +17,5 @@ mb-size demo.elf  |tee "demo.elf.size"
 'Finished building: demo.elf.size'
 ' '
 
-12:01:54 Build Finished (took 984ms)
+12:55:39 Build Finished (took 1s.902ms)
 

@@ -1723,3 +1723,21 @@ mb-size demo.elf  |tee "demo.elf.size"
   10656	    284	   3140	  14080	   3700	demo.elf
 'Finished building: demo.elf.size'
 ' '
+12:55:37 **** Auto Build of configuration Debug for project demo ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sseg/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../sseg/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10656	    284	   3140	  14080	   3700	demo.elf
+'Finished building: demo.elf.size'
+' '

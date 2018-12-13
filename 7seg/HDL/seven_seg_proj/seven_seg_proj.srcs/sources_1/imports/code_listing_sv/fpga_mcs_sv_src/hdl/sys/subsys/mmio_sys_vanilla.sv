@@ -105,7 +105,7 @@ module mmio_sys_vanilla
     .wr_data(wr_data_array[`S3_SW]),
     .din(sw)
     );
-    
+    // slot 8: 7 Segment Display
     bui_disp_core sseg_slot8
     (.clk(clk),
      .reset(reset),
